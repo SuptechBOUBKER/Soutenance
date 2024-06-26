@@ -1,0 +1,3927 @@
+<!DOCTYPE html>
+<html class='ltr' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-2SJM4QK42H'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2SJM4QK42H');
+</script>
+<script async='async' custom-element='amp-auto-ads' src='https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js'>
+</script>
+<!-- Google tag (gtag.js) - Google Analytics -->
+<script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-EP96R7M97W'>
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EP96R7M97W');
+</script>
+<script async='async' data-ad-client='ca-pub-4042780438239805' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+<meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+<title> Exercices corrigés en Langage  SQL</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#f8f8f8' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#f8f8f8' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='/imag/online-learning.png' rel='icon' type='image/x-icon'/>
+<link href='https://www.coodemaroc.com/2022/10/sql.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title=" Coode Maroc  - Atom" href="https://www.coodemaroc.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title=" Coode Maroc  - RSS" href="https://www.coodemaroc.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title=" Coode Maroc  - Atom" href="https://www.blogger.com/feeds/708822688834956217/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title=" Coode Maroc  - Atom" href="https://www.coodemaroc.com/feeds/7801641658240523640/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s320/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg' rel='image_src'/>
+<meta content='https://www.coodemaroc.com/2022/10/sql.html' property='og:url'/>
+<meta content=' Exercices corrigés en Langage  SQL' property='og:title'/>
+<meta content='' property='og:description'/>
+<meta content='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/w1200-h630-p-k-no-nu/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg' property='og:image'/>
+<!-- Google Fonts -->
+<link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i|Montserrat:400,400i,700,700i' media='all' rel='stylesheet' type='text/css'/>
+<link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+<!-- Template Style CSS -->
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:        Eventify
+License:     Premium Version
+Version:     2.0
+Author:      TemplatesYard
+Author Url:  https://www.templatesyard.com/
+----------------------------------------------- */
+/*-- Reset CSS --*/
+#google_translate_element { clear: both; }.thread-expanded .thread-count a { display: none; }.comments .continue { display: none!important; } a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{
+padding:0;
+border:0;
+outline:0;
+vertical-align:baseline;
+background:0 0;
+text-decoration:none
+}
+form,textarea,input,button{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+border-radius:0
+}
+dl,ul{
+list-style-position:inside;
+font-weight:400;
+list-style:none
+}
+ul li{
+list-style:none
+}
+caption,th{
+text-align:center
+}
+img{
+border:none;
+position:relative
+}
+a,a:visited{
+text-decoration:none
+}
+.clearfix{
+clear:both
+}
+.section,.widget,.widget ul{
+margin:0;
+padding:0
+}
+a{
+color:#3cc091
+}
+a img{
+border:0
+}
+abbr{
+text-decoration:none
+}
+.CSS_LIGHTBOX{
+z-index:999999!important
+}
+.CSS_LIGHTBOX{z-index:999999!important}.CSS_LIGHTBOX_ATTRIBUTION_INDEX_CONTAINER .CSS_HCONT_CHILDREN_HOLDER > .CSS_LAYOUT_COMPONENT.CSS_HCONT_CHILD:first-child > .CSS_LAYOUT_COMPONENT{opacity:0}
+.separator a{
+clear:none!important;
+float:none!important;
+margin-left:0!important;
+margin-right:0!important
+}
+#navbar-iframe,.widget-item-control,a.quickedit,.home-link,.feed-links{
+display:none!important
+}
+.center{
+display:table;
+margin:0 auto;
+position:relative
+}
+.widget > h2,.widget > h3{
+display:none
+}
+/*-- Body Content CSS --*/
+body{
+background:#f8f8f8 url() repeat fixed top left;
+background-color:#f8f8f8;
+font-family:'Source Sans Pro',sans-serif;
+font-size:14px;
+font-weight:400;
+color:#656565;
+word-wrap:break-word;
+margin:0;
+padding:0
+}
+#outer-wrapper{
+margin:0 auto;
+background-color:#fff;
+box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.row{
+width:1070px
+}
+#content-wrapper{
+margin:30px auto 0;
+overflow:hidden
+}
+#content-wrapper > .container{
+margin:0 -15px
+}
+#main-wrapper{
+float:left;
+overflow:hidden;
+width:66.66666667%;
+box-sizing:border-box;
+word-wrap:break-word;
+padding:0 15px;
+margin:0
+}
+#sidebar-wrapper{
+float:right;
+overflow:hidden;
+width:33.33333333%;
+box-sizing:border-box;
+word-wrap:break-word;
+padding:0 15px
+}
+.head-ads {
+display: block;
+background: #edcbaf;
+}
+.heade-ads h2 {
+display: none;
+}
+.head-ads .widget {
+width: 100%;
+height: auto;
+padding: 0px 0 0px;
+margin: 0 auto;
+text-align: center;
+line-height: 0px;
+}
+.post-image-wrap{
+position:relative;
+display:block
+}
+.post-image-link,.about-author .avatar-container,.comments .avatar-image-container{
+background-color:rgba(155,155,155,0.07);
+color:transparent!important
+}
+.post-thumb{
+display:block;
+position:relative;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:1;
+opacity: 0;
+transition:opacity .17s ease,transform .17s ease
+}
+.post-thumb.lazy-yard {
+opacity: 1;
+}
+.post-image-link:hover .post-thumb,.post-image-wrap:hover .post-image-link .post-thumb,.hot-item-inner:hover .post-image-link .post-thumb{
+opacity:.9
+}
+.post-title{
+font-family:'Montserrat', sans-serif
+}
+.post-title a{
+display:block
+}
+.top-bar-nav{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+left:0;
+}
+.top-bar-nav .widget > .widget-title{
+display:none
+}
+.top-bar-nav ul li{
+float:left
+}
+.top-bar-nav ul li > a{
+height:34px;
+display:block;
+color:#333333;
+font-size:13px;
+font-weight:400;
+line-height:34px;
+margin:0 10px 0 0;
+padding:0 5px;
+transition:color .17s
+}
+.top-bar-nav ul li:first-child > a{
+padding:0 5px 0 0
+}
+.top-bar-nav ul > li:hover > a{
+color:#3cc091
+}
+.top-bar-social{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+-moz-transform: translateY(-50%);
+right:0;
+}
+.top-bar-social .widget > .widget-title{
+display:none
+}
+.top-bar-social ul > li{
+float:left;
+display:inline-block
+}
+.top-bar-social ul > li > a{
+line-height:34px;
+display:block;
+color:#333333;
+text-decoration:none;
+font-size:13px;
+text-align:center;
+padding:0 5px;
+margin:0 0 0 10px;
+transition:color .17s
+}
+.top-bar-social ul > li:last-child > a{
+padding:0 0 0 5px
+}
+.top-bar-social ul > li:hover > a{
+color:#3cc091
+}
+.social a:before{
+display:inline-block;
+font-family:FontAwesome;
+font-style:normal;
+font-weight:400
+}
+.social .blogger a:before{
+content:"\f37d"
+}
+.social .facebook a:before{
+content:"\f09a"
+}
+.social .twitter a:before{
+content:"\f099"
+}
+.social .gplus a:before{
+content:"\f0d5"
+}
+.social .rss a:before{
+content:"\f09e"
+}
+.social .youtube a:before{
+content:"\f167"
+}
+.social .skype a:before{
+content:"\f17e"
+}
+.social .stumbleupon a:before{
+content:"\f1a4"
+}
+.social .tumblr a:before{
+content:"\f173"
+}
+.social .vk a:before{
+content:"\f189"
+}
+.social .stack-overflow a:before{
+content:"\f16c"
+}
+.social .github a:before{
+content:"\f09b"
+}
+.social .linkedin a:before{
+content:"\f0e1"
+}
+.social .dribbble a:before{
+content:"\f17d"
+}
+.social .soundcloud a:before{
+content:"\f1be"
+}
+.social .behance a:before{
+content:"\f1b4"
+}
+.social .digg a:before{
+content:"\f1a6"
+}
+.social .instagram a:before{
+content:"\f16d"
+}
+.social .pinterest a:before{
+content:"\f0d2"
+}
+.social .twitch a:before{
+content:"\f1e8"
+}
+.social .delicious a:before{
+content:"\f1a5"
+}
+.social .codepen a:before{
+content:"\f1cb"
+}
+.social .reddit a:before{
+content:"\f1a1"
+}
+.social .whatsapp a:before{
+content:"\f232"
+}
+.social .snapchat a:before{
+content:"\f2ac"
+}
+.social .email a:before{
+content:"\f0e0"
+}
+.social .external-link a:before{
+content:"\f35d"
+}
+.social-color .blogger a{
+background-color:#ff5722
+}
+.social-color .facebook a{
+background-color:#3b5999
+}
+.social-color .twitter a{
+background-color:#00acee
+}
+.social-color .gplus a{
+background-color:#db4a39
+}
+.social-color .youtube a{
+background-color:#f50000
+}
+.social-color .instagram a{
+background:linear-gradient(15deg,#ffb13d,#dd277b,#4d5ed4)
+}
+.social-color .pinterest a{
+background-color:#ca2127
+}
+.social-color .dribbble a{
+background-color:#ea4c89
+}
+.social-color .linkedin a{
+background-color:#0077b5
+}
+.social-color .tumblr a{
+background-color:#365069
+}
+.social-color .twitch a{
+background-color:#6441a5
+}
+.social-color .rss a{
+background-color:#ffc200
+}
+.social-color .skype a{
+background-color:#00aff0
+}
+.social-color .stumbleupon a{
+background-color:#eb4823
+}
+.social-color .vk a{
+background-color:#4a76a8
+}
+.social-color .stack-overflow a{
+background-color:#f48024
+}
+.social-color .github a{
+background-color:#24292e
+}
+.social-color .soundcloud a{
+background:linear-gradient(#ff7400,#ff3400)
+}
+.social-color .behance a{
+background-color:#191919
+}
+.social-color .digg a{
+background-color:#1b1a19
+}
+.social-color .delicious a{
+background-color:#0076e8
+}
+.social-color .codepen a{
+background-color:#000
+}
+.social-color .reddit a{
+background-color:#ff4500
+}
+.social-color .whatsapp a{
+background-color:#3fbb50
+}
+.social-color .snapchat a{
+background-color:#ffe700
+}
+.social-color .email a{
+background-color:#888
+}
+.social-color .external-link a{
+background-color:#202020
+}
+.owl-carousel{
+display:none;
+width:100%;
+-webkit-tap-highlight-color:transparent;
+position:relative;
+z-index:1
+}
+.owl-carousel .owl-stage{
+position:relative;
+-ms-touch-action:pan-Y
+}
+.owl-carousel .owl-stage:after{
+content:".";
+display:block;
+clear:both;
+visibility:hidden;
+line-height:0;
+height:0
+}
+.owl-carousel .owl-stage-outer{
+position:relative;
+overflow:hidden;
+-webkit-transform:translate3d(0px,0px,0px)
+}
+.owl-carousel .owl-controls .owl-nav .owl-prev,.owl-carousel .owl-controls .owl-nav .owl-next,.owl-carousel .owl-controls .owl-dot{
+cursor:pointer;
+cursor:hand;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none
+}
+.owl-carousel.owl-loaded{
+display:block
+}
+.owl-carousel.owl-loading{
+opacity:0;
+display:block
+}
+.owl-carousel.owl-hidden{
+opacity:0
+}
+.owl-carousel .owl-refresh .owl-item{
+display:none
+}
+.owl-carousel .owl-item{
+position:relative;
+min-height:1px;
+float:left;
+-webkit-backface-visibility:visible;
+-webkit-tap-highlight-color:transparent;
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none
+}
+.owl-carousel .owl-item img{
+display:block;
+width:100%;
+-webkit-transform-style:preserve-3d;
+transform-style:preserve-3d
+}
+.owl-carousel.owl-text-select-on .owl-item{
+-webkit-user-select:auto;
+-moz-user-select:auto;
+-ms-user-select:auto;
+user-select:auto
+}
+.owl-carousel .owl-grab{
+cursor:move;
+cursor:-webkit-grab;
+cursor:-o-grab;
+cursor:-ms-grab;
+cursor:grab
+}
+.owl-carousel.owl-rtl{
+direction:rtl
+}
+.owl-carousel.owl-rtl .owl-item{
+float:right
+}
+.no-js .owl-carousel{
+display:block
+}
+.owl-carousel .animated{
+-webkit-animation-duration:1000ms;
+animation-duration:1000ms;
+-webkit-animation-fill-mode:both;
+animation-fill-mode:both
+}
+.owl-carousel .owl-animated-in{
+z-index:1
+}
+.owl-carousel .owl-animated-out{
+z-index:0
+}
+.owl-height{
+-webkit-transition:height 500ms ease-in-out;
+-moz-transition:height 500ms ease-in-out;
+-ms-transition:height 500ms ease-in-out;
+-o-transition:height 500ms ease-in-out;
+transition:height 500ms ease-in-out
+}
+.owl-prev,.owl-next{
+position:relative;
+float:left;
+width:24px;
+height:24px;
+background-color:#fff;
+font-family: FontAwesome;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:14px;
+line-height:23px;
+font-weight:900;
+color:#202020;
+text-align:center;
+cursor:pointer;
+border:1px solid rgba(0,0,0,0.08);
+box-sizing:border-box;
+transition:all .25s ease
+}
+.owl-prev:before{
+content:'\f0a5'
+}
+.owl-next:before{
+content:'\f0a4'
+}
+.owl-prev:hover,.owl-next:hover{
+background-color:#3cc091;
+color:#fff;
+border-color:#3cc091
+}
+#break-wrapper-outer {
+background-color: #f5f5f5;
+border-bottom: 1px solid #e9e9e9;
+}
+#break-wrapper {
+border-top:0;
+padding: 5px;
+box-sizing: border-box;
+}
+#break-wrapper{
+margin:0 auto
+}
+#break-section .widget{
+display:none
+}
+#break-section .show-ticker{
+display:block;
+margin:0
+}
+ul.loading-post {
+line-height: 30px;
+margin-left: 10px;
+}
+#break-section .no-posts{
+height:30px;
+line-height:30px;
+text-align:left;
+padding:0 0 0 15px;
+box-sizing: border-box;
+}
+#break-section .widget > .widget-title{
+display:none;
+position:relative;
+float:left;
+background-color:#202020;
+height:30px;
+color:#fff;
+font-size:9px;
+font-weight:400;
+line-height:30px;
+text-transform:uppercase;
+padding:0 12px
+}
+#break-section .show-ticker > .widget-title{
+display:block
+}
+#break-section .widget > h2,#break-section .widget > h3{
+display:none
+}
+#break-section .widget > .widget-title > h3{
+margin:0
+}
+#break-section .widget > .widget-title > h3:before{
+content:'\f0e7';
+font-family:FontAwesome;
+float:left;
+font-size:11px;
+font-weight:900;
+margin:0 5px 0 0;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+#break-section .widget-content{
+position:relative;
+font-size:13px;
+display:block;
+overflow:hidden;
+height:30px;
+line-height:29px;
+padding:0;
+box-sizing:border-box
+}
+ul.ticker-widget{
+width:100%!important;
+box-sizing:border-box;
+padding:0 0 0 15px
+}
+.ticker-widget .ticker-item{
+position:relative;
+float:left;
+display:block;
+height:30px;
+padding:0
+}
+.ticker-widget .post-image-link {
+position: relative;
+float: left;
+width: 35px;
+height: 30px;
+display: block;
+overflow: hidden;
+margin: 0 10px 0 0;
+}
+.ticker-widget .post-title{
+height:24px;
+font-size:13px;
+font-weight:400;
+line-height:30px;
+margin:0;
+padding:0;
+float:left;
+}
+.ticker-widget .post-title a{
+position:relative;
+display:block;
+overflow:hidden;
+color:#333333;
+transition:color .25s
+}
+.ticker-widget .post-title a:hover{
+color:#3cc091
+}
+.ticker-widget .post-tag {
+position: static;
+float: left;
+margin: 6px 10px 0 0;
+}
+.ticker-widget .owl-nav{
+position:absolute;
+top:0;
+right:0;
+width:52px;
+height:24px;
+z-index: 5;
+}
+.ticker-widget .owl-nav .owl-prev{
+margin-top:3px;
+}
+.ticker-widget .owl-nav .owl-next{
+margin:3px 0 0 4px
+}
+@keyframes fadeInLeft {
+from{
+opacity:0;
+transform:translate3d(-30px,0,0)
+}
+to{
+opacity:1;
+transform:none
+}
+}
+@keyframes fadeOutLeft {
+from{
+opacity:1
+}
+to{
+opacity:0;
+transform:translate3d(-30px,0,0)
+}
+}
+@keyframes fadeInRight {
+from{
+opacity:0;
+transform:translate3d(30px,0,0)
+}
+to{
+opacity:1;
+transform:none
+}
+}
+.fadeInRight{
+animation-name:fadeInRight
+}
+@keyframes fadeOutRight {
+from{
+opacity:1
+}
+to{
+opacity:0;
+transform:translate3d(30px,0,0)
+}
+}
+.fadeOutRight{
+animation-name:fadeOutRight
+}
+@keyframes fadeInUp {
+from{
+opacity:0;
+transform:translate3d(0,30px,0)
+}
+to{
+opacity:1;
+transform:none
+}
+}
+.fadeInUp{
+animation-name:fadeInUp
+}
+@keyframes fadeOutUp {
+from{
+opacity:1
+}
+to{
+opacity:0;
+transform:translate3d(0,-30px,0)
+}
+}
+.fadeOutUp{
+animation-name:fadeOutUp
+}
+#header-wrap{
+position:relative;
+margin:0
+}
+.header-header{
+background-color:#fff;
+width:100%;
+position:relative;
+overflow:hidden;
+padding:15px 0;
+text-align:center;
+}
+.header-header .container{
+position:relative;
+margin:0 auto;
+padding:0
+}
+.header-logo{
+position:relative;
+width:auto;
+text-align:center;
+display: inline-block;
+max-height:60px;
+margin:0;
+padding:0
+}
+.header-logo .header-image-wrapper{
+display:block
+}
+.header-logo img{
+max-width:100%;
+max-height:60px;
+margin:0
+}
+.header-logo h1{
+color:#333333;
+font-size:20px;
+line-height:1.4em;
+margin:0
+}
+.header-logo p{
+font-size:12px;
+margin:5px 0 0
+}
+.header-menu{
+position:relative;
+width:100%;
+height:46px;
+background-color:#1f2532;
+z-index:10;
+font-size:13px;
+margin:0
+}
+.header-menu .container{
+position:relative;
+margin:0 auto;
+padding:0
+}
+#main-menu .widget,#main-menu .widget > .widget-title{
+display:none
+}
+#main-menu .show-menu{
+display:block
+}
+#main-menu{
+position:relative;
+height:46px;
+z-index:15
+}
+#main-menu ul > li{
+float:left;
+position:relative;
+margin:0;
+padding:0;
+transition:background .17s
+}
+#main-menu ul > li > a{
+position:relative;
+color:#ffffff;
+font-size:13px;
+font-weight:700;
+line-height:46px;
+display:inline-block;
+margin:0;
+padding:0 13px;
+transition:color .17s ease
+}
+#main-menu ul#main-menu-nav > li:first-child > a{
+padding:0 13px 0 0
+}
+#main-menu ul#main-menu-nav > li > a{
+text-transform:uppercase
+}
+#main-menu ul > li:hover > a{
+color:#fff
+}
+#main-menu ul > li > ul{
+position:absolute;
+float:left;
+left:0;
+top:46px;
+width:180px;
+background-color:#202020;
+z-index:99999;
+margin-top:0;
+padding:0;
+border-bottom:2px solid #3cc091;
+box-shadow:0 3px 5px rgba(0,0,0,0.2);
+visibility:hidden;
+opacity:0
+}
+#main-menu ul > li > ul > li > ul{
+position:absolute;
+float:left;
+top:0;
+left:100%;
+margin:0
+}
+#main-menu ul > li > ul > li{
+display:block;
+float:none;
+position:relative;
+transition:all .17s ease
+}
+#main-menu ul > li > ul > li a{
+display:block;
+height:36px;
+font-size:13px;
+color:#fff;
+font-weight:400;
+line-height:36px;
+box-sizing:border-box;
+margin:0;
+padding:0 15px;
+border-bottom:1px dashed rgba(255,255,255,0.15);
+transition:all .17s ease
+}
+#main-menu ul > li > ul > li:hover{
+background-color:rgba(0,0,0,0.2)
+}
+#main-menu ul > li > ul > li:hover > a{
+color:#3cc091
+}
+#main-menu ul > li > ul > li:last-child a{
+border-bottom:0
+}
+#main-menu ul > li.has-sub > a:after{
+content:'\f107';
+float:right;
+font-family:FontAwesome;
+font-size:14px;
+font-weight:400;
+margin:0 0 0 3px
+}
+#main-menu ul > li > ul > li.has-sub > a:after{
+content:'\f105';
+float:right;
+margin:0
+}
+#main-menu .mega-menu{
+position:static!important
+}
+#main-menu .mega-menu > ul{
+width:100%;
+box-sizing:border-box;
+padding:20px 10px
+}
+#main-menu .mega-menu > ul.mega-menu-inner{
+overflow:hidden
+}
+#main-menu ul > li:hover > ul,#main-menu ul > li > ul > li:hover > ul{
+visibility:visible;
+opacity:1
+}
+#main-menu ul ul{
+transition:all .17s ease
+}
+.mega-menu-inner .mega-item{
+float:left;
+width:25%;
+box-sizing:border-box;
+padding:0 10px
+}
+.mega-menu-inner .mega-content{
+position:relative;
+width:100%;
+overflow:hidden;
+padding:0
+}
+.mega-content .post-image-wrap{
+width:100%;
+height:140px;
+overflow:hidden;
+border-radius:4px
+}
+.mega-content .post-image-link{
+width:100%;
+height:100%;
+z-index:1;
+display:block;
+position:relative;
+overflow:hidden
+}
+.mega-content .post-title{
+position:relative;
+font-size:13px;
+font-weight:400;
+line-height:1.5em;
+margin:7px 0 5px
+}
+.mega-content .post-title a{
+display:block;
+color:#fff;
+transition:color .17s
+}
+.mega-content:hover .post-title a{
+color:#3cc091
+}
+.no-posts{
+float:left;
+width:100%;
+height:100px;
+line-height:100px;
+text-align:center
+}
+.mega-menu .no-posts{
+line-height:60px;
+color:#333333
+}
+.show-search,.hide-search{
+position:absolute;
+right:0;
+top:0;
+display:block;
+width:46px;
+height:46px;
+line-height:46px;
+z-index:20;
+color:#ffffff;
+font-size:15px;
+text-align:right;
+cursor:pointer;
+transition:color .17s ease
+}
+.show-search:before{
+content:"\f002";
+font-family:FontAwesome;
+font-weight:400
+}
+.hide-search:before{
+content:"\f00d";
+font-family:FontAwesome;
+font-weight:400
+}
+.show-search:hover,.hide-search:hover{
+color:#fff
+}
+#nav-search{
+display:none;
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:46px;
+z-index:99;
+background-color:#1f2532;
+box-sizing:border-box;
+padding:0
+}
+#nav-search .search-form{
+width:100%;
+height:46px;
+background-color:rgba(0,0,0,0);
+line-height:46px;
+overflow:hidden;
+padding:0
+}
+#nav-search .search-input{
+width:100%;
+height:46px;
+font-family:inherit;
+color:#ffffff;
+margin:0;
+padding:0 70px 0 0;
+background-color:rgba(0,0,0,0);
+font-size:14px;
+font-weight:400;
+box-sizing:border-box;
+border:0
+}
+#nav-search .search-input:focus{
+color:#ffffff;
+outline:none
+}
+.slide-menu-toggle{
+display:none;
+position:absolute;
+line-height:46px;
+height:46px;
+width:46px;
+top:0;
+left:0;
+font-family:FontAwesome;
+color:#fff;
+font-size:17px;
+font-weight:400;
+text-align:left;
+cursor:pointer;
+z-index:4;
+padding:0
+}
+.slide-menu-toggle:before{
+content:"\f0c9"
+}
+.nav-active .slide-menu-toggle:before{
+content:"\f00d"
+}
+.mobile-menu{
+display:none;
+position:absolute;
+top:46px;
+left:0;
+width:100%;
+background-color:#202020;
+box-sizing:border-box;
+padding:20px;
+border-top:1px solid rgba(255,255,255,0.08);
+visibility:hidden;
+opacity:0;
+transform-origin:0 0;
+transform:scaleY(0);
+transition:all .17s ease
+}
+.nav-active .mobile-menu{
+visibility:visible;
+opacity:1;
+transform:scaleY(1)
+}
+.mobile-menu > ul{
+margin:0
+}
+.mobile-menu .m-sub{
+display:none;
+padding:0
+}
+.mobile-menu ul li{
+position:relative;
+display:block;
+overflow:hidden;
+float:left;
+width:100%;
+font-size:13px;
+font-weight:700;
+text-transform:uppercase;
+line-height:38px;
+margin:0;
+padding:0;
+border-top:1px dashed rgba(255,255,255,0.15)
+}
+.mobile-menu > ul li ul{
+overflow:hidden
+}
+.mobile-menu > ul > li:first-child{
+border-top:0
+}
+.mobile-menu ul li a{
+color:#fff;
+padding:0;
+display:block;
+transition:all .17s ease
+}
+.mobile-menu ul li.has-sub .submenu-toggle{
+position:absolute;
+top:0;
+right:0;
+color:#fff;
+cursor:pointer
+}
+.mobile-menu ul li.has-sub .submenu-toggle:after{
+content:'\f105';
+font-family:FontAwesome;
+font-weight:400;
+float:right;
+width:34px;
+font-size:16px;
+text-align:center;
+transition:all .17s ease
+}
+.mobile-menu ul li.has-sub.show > .submenu-toggle:after{
+transform:rotate(90deg)
+}
+.mobile-menu > ul > li > ul > li{
+border-color:rgba(255,255,255,0.05)
+}
+.mobile-menu > ul > li > ul > li a{
+font-size:13px;
+text-transform:initial;
+font-weight:400
+}
+.mobile-menu > ul > li > ul > li > a{
+color:#fff;
+opacity:.7;
+padding:0 0 0 15px
+}
+.mobile-menu > ul > li > ul > li > ul > li{
+border-color:rgba(255,255,255,0.02)
+}
+.mobile-menu > ul > li > ul > li > ul > li > a{
+color:#fff;
+opacity:.7;
+padding:0 0 0 30px
+}
+.mobile-menu ul li a:hover,.mobile-menu ul > li > .submenu-toggle:hover{
+color:#3cc091
+}
+.post-meta{
+overflow:hidden;
+color:#aaa;
+font-size:13px;
+font-weight:400;
+padding:0 1px
+}
+.post-meta .post-author,.post-meta .post-date{
+float:left;
+display:inline-block;
+margin:0
+}
+.post-meta .post-author:after{
+content:'-';
+margin:0 4px
+}
+.post-author{
+font-weight:700
+}
+.post-meta a{
+color:#333333;
+transition:color .17s
+}
+.post-meta a:hover{
+color:#3cc091
+}
+.post-meta .post-author em {
+float: left;
+font-style: normal;
+margin: 0 4px 0 0;
+}
+.post-meta .post-author a{
+color:#3cc091
+}
+.post-meta .post-author a:hover{
+color:#333333;
+}
+.post-read-link {
+position: absolute;
+bottom: 10%;
+left: 20px;
+border: 1px solid #fff;
+color: #fff;
+padding: 10px;
+border-radius: 3px;
+text-transform: uppercase;
+font-weight: 700;
+-moz-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+-o-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+-webkit-transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+transition: all .25s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.post-read-link:hover {
+background:#fff;
+color:#0a0a0a;
+}
+.queryMessage{
+overflow:hidden;
+background-color:#f2f2f2;
+color:#333333;
+font-size:13px;
+font-weight:400;
+padding:8px 10px;
+margin:0 0 25px
+}
+.queryMessage .query-info{
+margin:0 5px
+}
+.queryMessage .search-query,.queryMessage .search-label{
+font-weight:700;
+text-transform:uppercase
+}
+.queryMessage .search-query:before,.queryMessage .search-label:before{
+content:"\201c"
+}
+.queryMessage .search-query:after,.queryMessage .search-label:after{
+content:"\201d"
+}
+.queryMessage a.show-more{
+float:right;
+color:#3cc091;
+text-decoration:underline;
+transition:opacity .17s
+}
+.queryMessage a.show-more:hover{
+opacity:.8
+}
+.queryEmpty{
+font-size:13px;
+font-weight:400;
+padding:10px 0;
+margin:0 0 25px;
+text-align:center
+}
+.title-wrap{
+position:relative;
+float:left;
+width:100%;
+height:28px;
+display:block;
+margin:0 0 20px;
+border-bottom:2px solid #3cc091
+}
+.title-wrap > h3{
+position:relative;
+float:left;
+height:28px;
+background-color:#3cc091;
+font-size:12px;
+color:#fff;
+font-weight:700;
+line-height:30px;
+text-transform:uppercase;
+padding:0 15px;
+margin:0;
+border-radius:2px 2px 0 0
+}
+.custom-widget li{
+overflow:hidden;
+margin:20px 0 0
+}
+.custom-widget li:first-child{
+padding:0;
+margin:0;
+border:0
+}
+.custom-widget .post-image-link{
+position:relative;
+width:80px;
+height:60px;
+float:left;
+overflow:hidden;
+display:block;
+vertical-align:middle;
+margin:0 12px 0 0;
+border-radius:4px
+}
+.custom-widget .post-info{
+overflow:hidden
+}
+.custom-widget .post-title{
+overflow:hidden;
+font-size:13px;
+font-weight:400;
+line-height:1.5em;
+margin:0 0 3px
+}
+.custom-widget .post-title a{
+display:block;
+color:#333333;
+transition:color .17s
+}
+.custom-widget li:hover .post-title a{
+color:#3cc091
+}
+#ad-wrapper {
+margin: 0 auto;
+}
+.home-ad .widget > .widget-title{
+display:none
+}
+.home-ad .widget{
+max-width:100%;
+margin:0 auto;
+text-align:center;
+}
+.home-ad .widget .widget-content{
+position:relative;
+width:100%;
+max-height:90px;
+line-height:1;
+margin: 30px auto 0;
+}
+.index-post-wrap{
+position:relative;
+float:left;
+width:100%
+}
+.blog-post{
+display:block;
+overflow:hidden;
+word-wrap:break-word
+}
+.index-post{
+display:block;
+margin:0 0 30px
+}
+.index-post .post-image-wrap{
+float:left;
+width:260px;
+height:195px;
+overflow:hidden;
+margin:0 20px 0 0;
+border-radius:4px
+}
+.index-post .post-image-wrap .post-image-link{
+width:100%;
+height:100%;
+position:relative;
+display:block;
+z-index:1;
+overflow:hidden
+}
+.post-tag{
+position:absolute;
+top:15px;
+left:15px;
+height:20px;
+z-index:5;
+background-color:#3cc091;
+color:#fff;
+font-size:10px;
+line-height:20px;
+font-weight:700;
+text-transform:uppercase;
+padding:0 7px;
+border-radius:2px
+}
+.index-post .post-info{
+overflow:hidden
+}
+.index-post .post-info > h2{
+font-size:24px;
+font-weight:700;
+line-height:1.4em;
+text-decoration:none;
+margin:0
+}
+.index-post .post-info > h2 > a{
+display:block;
+color:#333333;
+transition:color .17s
+}
+.index-post .post-info > h2:hover > a{
+color:#3cc091
+}
+.widget iframe,.widget img{
+max-width:100%
+}
+.date-header{
+display:block;
+overflow:hidden;
+font-weight:400;
+margin:0!important;
+padding:0
+}
+.index-post .post-meta{
+margin:10px 0 0
+}
+.post-snippet{
+position:relative;
+display:block;
+overflow:hidden;
+font-size:13px;
+line-height:1.6em;
+font-weight:400;
+margin:7px 0 0
+}
+a.read-more{
+display:inline-block;
+background-color:#3cc091;
+color:#fff;
+height:28px;
+font-size:13px;
+font-weight:600;
+line-height:28px;
+padding:0 15px;
+margin:12px 0 0;
+border-radius:2px;
+transition:background .17s ease
+}
+a.read-more:hover{
+background-color:#202020
+}
+a.read-more::after {
+content: '\f178';
+font-family: FontAwesome;
+font-weight: 400;
+margin: 0 0 0 5px;
+}
+#breadcrumb{
+font-size:12px;
+font-weight:400;
+color:#aaa;
+margin:0 0 10px
+}
+#breadcrumb a{
+color:#aaa;
+transition:color .17s
+}
+#breadcrumb a:hover{
+color:#3cc091
+}
+#breadcrumb a,#breadcrumb em{
+display:inline-block
+}
+#breadcrumb .delimiter:after{
+content:'\f054';
+font-family:FontAwesome;
+font-size:8px;
+font-weight:400;
+font-style:normal;
+vertical-align:middle;
+margin:0 3px
+}
+.item-post h1.post-title{
+color:#333333;
+font-size:27px;
+line-height:1.5em;
+font-weight:700;
+position:relative;
+display:block;
+margin:10px 0;
+padding:0
+}
+.static_page .item-post h1.post-title{
+margin:0
+}
+.item-post .post-body{
+width:100%;
+font-size:15px;
+line-height:1.5em;
+overflow:hidden;
+padding:20px 0 0;
+margin:10px 0 0;
+border-top:1px dashed #ebebeb
+}
+.static_page .item-post .post-body{
+padding:20px 0
+}
+.item-post .post-outer{
+padding:0
+}
+.item-post .post-body img{
+max-width:100%
+}
+.main .widget{
+margin:0
+}
+.main .Blog{
+border-bottom-width:0
+}
+.post-footer{
+position:relative;
+float:left;
+width:100%;
+margin:20px 0 0
+}
+.inline-ad{
+position:relative;
+display:block;
+max-height:60px;
+margin:0 0 30px
+}
+.inline-ad > ins{
+display:block!important;
+margin:0 auto!important
+}
+.item .inline-ad{
+float:left;
+width:100%;
+margin:20px 0 0
+}
+.item-post-wrap > .inline-ad{
+margin:0 0 20px
+}
+.post-labels{
+overflow:hidden;
+height:auto;
+position:relative;
+margin:0 0 20px;
+padding:0
+}
+.post-labels span,.post-labels a{
+float:left;
+height:22px;
+background-color:#f2f2f2;
+color:#333333;
+font-size:12px;
+line-height:22px;
+font-weight:400;
+margin:0;
+padding:0 10px;
+border-radius:2px
+}
+.post-labels span{
+background-color:#3cc091;
+color:#fff
+}
+.post-labels a{
+margin:0 0 0 5px;
+transition:all .17s ease
+}
+.post-labels a:hover{
+background-color:#3cc091;
+color:#fff;
+border-color:#3cc091
+}
+.post-reactions{
+height:28px;
+display:block;
+margin:0 0 15px
+}
+.post-reactions span{
+float:left;
+color:#333333;
+font-size:11px;
+line-height:25px;
+text-transform:uppercase;
+font-weight:700
+}
+.reactions-inner{
+float:left;
+margin:0;
+height:28px
+}
+.post-share{
+position:relative;
+overflow:hidden;
+line-height:0;
+margin:0 0 30px
+}
+ul.share-links{
+position:relative
+}
+.share-links li{
+width:32px;
+float:left;
+box-sizing:border-box;
+margin:0 5px 0 0
+}
+.share-links li.facebook,.share-links li.twitter{
+width:20%
+}
+.share-links li a{
+float:left;
+display:inline-block;
+cursor:pointer;
+width:100%;
+height:32px;
+line-height:32px;
+color:#fff;
+font-weight:400;
+font-size:13px;
+text-align:center;
+box-sizing:border-box;
+opacity:1;
+border-radius:2px;
+transition:all .17s ease
+}
+.share-links li.whatsapp-mobile{
+display:none
+}
+.is-mobile li.whatsapp-desktop{
+display:none
+}
+.is-mobile li.whatsapp-mobile{
+display:inline-block
+}
+.share-links li a:before{
+float:left;
+display:block;
+width:32px;
+background-color:rgba(0,0,0,0.05);
+text-align:center;
+line-height:32px
+}
+.share-links li a:hover{
+opacity:.8
+}
+ul.post-nav{
+position:relative;
+overflow:hidden;
+display:block;
+margin:0 0 30px
+}
+.post-nav li{
+display:inline-block;
+width:50%
+}
+.post-nav .post-prev{
+float:left;
+text-align:left;
+box-sizing:border-box;
+padding:0 10px
+}
+.post-nav .post-next{
+float:right;
+text-align:right;
+box-sizing:border-box;
+padding:0 10px
+}
+.post-nav li a{
+color:#333333;
+line-height:1.4em;
+display:block;
+overflow:hidden;
+transition:color .17s
+}
+.post-nav li:hover a{
+color:#3cc091
+}
+.post-nav li span{
+display:block;
+font-size:11px;
+color:#aaa;
+font-weight:700;
+text-transform:uppercase;
+padding:0 0 2px
+}
+.post-nav .post-prev span:before{
+content:"\f053";
+float:left;
+font-family:FontAwesome;
+font-size:10px;
+font-weight:400;
+text-transform:none;
+margin:0 2px 0 0
+}
+.post-nav .post-next span:after{
+content:"\f054";
+float:right;
+font-family:FontAwesome;
+font-size:10px;
+font-weight:400;
+text-transform:none;
+margin:0 0 0 2px
+}
+.post-nav p{
+font-size:12px;
+font-weight:400;
+line-height:1.4em;
+margin:0
+}
+.post-nav .post-nav-active p{
+color:#aaa
+}
+.about-author{
+position:relative;
+display:block;
+overflow:hidden;
+background-color:#f9f9f9;
+padding:20px;
+margin:0 0 30px;
+border:1px solid #f0f0f0
+}
+.about-author .avatar-container{
+position:relative;
+float:left;
+width:80px;
+height:80px;
+background-color:rgba(255,255,255,0.05);
+overflow:hidden;
+margin:0 15px 0 0
+}
+.about-author .author-avatar{
+float:left;
+width:100%;
+height:100%
+}
+.author-name{
+overflow:hidden;
+display:inline-block;
+font-size:12px;
+font-weight:700;
+text-transform:uppercase;
+line-height:14px;
+margin:7px 0 3px
+}
+.author-name span{
+color:#333333
+}
+.author-name a{
+color:#3cc091;
+transition:opacity .17s
+}
+.author-name a:hover{
+opacity:.8
+}
+.author-description{
+display:block;
+overflow:hidden;
+font-size:12px;
+font-weight:400;
+line-height:1.6em
+}
+.author-description a:hover{
+text-decoration:underline
+}
+#related-wrap{
+overflow:hidden;
+margin:0 0 30px
+}
+#related-wrap .related-tag{
+display:none
+}
+.related-ready{
+float:left;
+width:100%
+}
+.related-ready .loader{
+height:178px
+}
+ul.related-posts{
+position:relative;
+overflow:hidden;
+margin:0 -10px;
+padding:0
+}
+.related-posts .related-item{
+width:33.33333333%;
+position:relative;
+overflow:hidden;
+float:left;
+display:block;
+box-sizing:border-box;
+padding:0 10px;
+margin:0
+}
+.related-posts .post-image-link{
+width:100%;
+height:130px;
+position:relative;
+overflow:hidden;
+display:block;
+border-radius:4px
+}
+.related-posts .post-title{
+font-size:13px;
+font-weight:400;
+line-height:1.5em;
+display:block;
+margin:7px 0 5px
+}
+.related-posts .post-title a{
+color:#333333;
+transition:color .17s
+}
+.related-posts .related-item:hover .post-title a{
+color:#3cc091
+}
+#blog-pager{
+float:left;
+width:100%;
+overflow:hidden;
+clear:both;
+margin:0 0 30px
+}
+.blog-pager a,.blog-pager span{
+float:left;
+display:block;
+min-width:30px;
+height:30px;
+background-color:#f2f2f2;
+color:#333333;
+font-size:13px;
+font-weight:700;
+line-height:30px;
+text-align:center;
+box-sizing:border-box;
+padding:0 10px;
+margin:0 5px 0 0;
+border-radius:2px;
+transition:all .17s ease
+}
+.blog-pager span.page-dots{
+min-width:20px;
+background-color:#fff;
+font-size:16px;
+color:#656565;
+font-weight:400;
+line-height:32px;
+padding:0
+}
+.blog-pager .page-of{
+display:none;
+width:auto;
+float:right;
+border-color:rgba(0,0,0,0);
+margin:0
+}
+.blog-pager .page-active,.blog-pager a:hover{
+background-color:#3cc091;
+color:#fff;
+border-color:#3cc091
+}
+.blog-pager .page-prev:before,.blog-pager .page-next:before{
+font-family:FontAwesome;
+font-size:11px;
+font-weight:400
+}
+.blog-pager .page-prev:before{
+content:'\f053'
+}
+.blog-pager .page-next:before{
+content:'\f054'
+}
+.blog-pager .blog-pager-newer-link,.blog-pager .blog-pager-older-link{
+float:left;
+display:inline-block;
+width:auto;
+padding:0 10px;
+margin:0
+}
+.blog-pager .blog-pager-older-link{
+float:right
+}
+.archive #blog-pager,.home .blog-pager .blog-pager-newer-link,.home .blog-pager .blog-pager-older-link{
+display:none
+}
+.blog-post-comments{
+display:none
+}
+.blog-post-comments .comments-title{
+margin:0 0 20px
+}
+.comments-system-disqus .comments-title,.comments-system-facebook .comments-title{
+margin:0
+}
+#comments{
+margin:0
+}
+#gpluscomments{
+float:left!important;
+width:100%!important;
+margin:0 0 25px!important
+}
+#gpluscomments iframe{
+float:left!important;
+width:100%
+}
+.comments{
+display:block;
+clear:both;
+margin:0;
+color:#333333
+}
+.comments .comment-thread > ol{
+padding:0
+}
+.comments > h3{
+font-size:13px;
+font-weight:400;
+font-style:italic;
+padding-top:1px
+}
+.comments .comments-content .comment{
+list-style:none;
+margin:0;
+padding:0 0 8px
+}
+.comments .comments-content .comment:first-child{
+padding-top:0
+}
+.facebook-tab,.fb_iframe_widget_fluid span,.fb_iframe_widget iframe{
+width:100%!important
+}
+.comments .item-control{
+position:static
+}
+.comments .avatar-image-container{
+float:left;
+overflow:hidden;
+position:absolute
+}
+.comments .avatar-image-container,.comments .avatar-image-container img{
+height:35px;
+max-height:35px;
+width:35px;
+max-width:35px;
+border-radius:100%
+}
+.comments .comment-block{
+overflow:hidden;
+padding:0 0 10px
+}
+.comments .comment-block,.comments .comments-content .comment-replies{
+margin:0 0 0 50px
+}
+.comments .comments-content .inline-thread{
+padding:0
+}
+.comments .comment-actions{
+float:left;
+width:100%;
+position:relative;
+margin:0
+}
+.comments .comments-content .comment-header{
+font-size:15px;
+display:block;
+overflow:hidden;
+clear:both;
+margin:0 0 3px;
+padding:0 0 5px;
+border-bottom:1px dashed #d6d6d6
+}
+.comments .comments-content .comment-header a{
+color:#333333;
+transition:color .17s
+}
+.comments .comments-content .comment-header a:hover{
+color:#3cc091
+}
+.comments .comments-content .user{
+font-style:normal;
+font-weight:700;
+display:block
+}
+.comments .comments-content .icon.blog-author{
+display:none
+}
+.comments .comments-content .comment-content{
+float:left;
+font-size:13px;
+color:#5E5E5E;
+font-weight:400;
+text-align:left;
+line-height:1.4em;
+margin:5px 0 9px
+}
+.comments .comment .comment-actions a{
+margin-right:5px;
+padding:2px 5px;
+color:#333333;
+font-weight:400;
+background-color:#f2f2f2;
+font-size:10px;
+transition:all .17s ease
+}
+.comments .comment .comment-actions a:hover{
+color:#fff;
+background-color:#3cc091;
+border-color:#3cc091;
+text-decoration:none
+}
+.comments .comments-content .datetime{
+float:left;
+font-size:11px;
+font-weight:400;
+color:#aaa;
+position:relative;
+padding:0 1px;
+margin:4px 0 0;
+display:block
+}
+.comments .comments-content .datetime a,.comments .comments-content .datetime a:hover{
+color:#aaa
+}
+.comments .thread-toggle{
+margin-bottom:4px
+}
+.comments .thread-toggle .thread-arrow{
+height:7px;
+margin:0 3px 2px 0
+}
+.comments .thread-count a,.comments .continue a{
+transition:opacity .17s
+}
+.comments .thread-count a:hover,.comments .continue a:hover{
+opacity:.8
+}
+.comments .thread-expanded{
+padding:5px 0 0
+}
+.comments .thread-chrome.thread-collapsed{
+display:none
+}
+.thread-arrow:before{
+content:'';
+font-family:FontAwesome;
+color:#333333;
+font-weight:400;
+margin:0 2px 0 0
+}
+.comments .thread-expanded .thread-arrow:before{
+content:'\f0d7'
+}
+.comments .thread-collapsed .thread-arrow:before{
+content:'\f0da'
+}
+.comments .comments-content .comment-thread{
+margin:0
+}
+.comments .continue a{
+padding:0 0 0 60px;
+font-weight:400
+}
+.comments .comments-content .loadmore.loaded{
+margin:0;
+padding:0
+}
+.comments .comment-replybox-thread{
+margin:0
+}
+.comments .comments-content .loadmore,.comments .comments-content .loadmore.loaded{
+display:none
+}
+#comment-editor{
+margin:0 0 20px
+}
+.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{
+color:#333333;
+font-weight:700;
+margin:0 0 15px
+}
+.post-body h1,.post-body h2{
+font-size:24px
+}
+.post-body h3{
+font-size:21px
+}
+.post-body h4{
+font-size:18px
+}
+.post-body h5{
+font-size:16px
+}
+.post-body h6{
+font-size:13px
+}
+blockquote{
+font-style:italic;
+padding:10px;
+margin:0;
+border-left:4px solid #3cc091
+}
+blockquote:before,blockquote:after{
+display:inline-block;
+font-family:FontAwesome;
+font-style:normal;
+font-weight:400;
+color:#aaa;
+line-height:1
+}
+blockquote:before{
+content:'\f10d';
+margin:0 10px 0 0
+}
+blockquote:after{
+content:'\f10e';
+margin:0 0 0 10px
+}
+.widget .post-body ul,.widget .post-body ol{
+line-height:1.5;
+font-weight:400
+}
+.widget .post-body li{
+margin:5px 0;
+padding:0;
+line-height:1.5
+}
+.post-body ul{
+padding:0 0 0 20px
+}
+.post-body ul li:before{
+content:"\f105";
+font-family:FontAwesome;
+font-size:13px;
+font-weight:400;
+margin:0 5px 0 0
+}
+.post-body u{
+text-decoration:underline
+}
+.post-body a{
+transition:color .17s ease
+}
+.post-body strike{
+text-decoration:line-through
+}
+.contact-form{
+overflow:hidden
+}
+.contact-form .widget-title{
+display:none
+}
+.contact-form .contact-form-name{
+width:calc(50% - 5px)
+}
+.contact-form .contact-form-email{
+width:calc(50% - 5px);
+float:right
+}
+.sidebar .widget{
+position:relative;
+overflow:hidden;
+background-color:#fff;
+box-sizing:border-box;
+padding:0;
+margin:0 0 30px
+}
+.sidebar .widget-title{
+position: relative;
+float: left;
+width: 100%;
+height: 32px;
+background-color:#1f2532;
+border-bottom: 2px solid rgba(0,0,0,.1);
+border-radius: 3px;
+display: block;
+margin: 0 0 20px;
+}
+.sidebar .widget-title > h3{
+position: relative;
+float: left;
+height: 32px;
+font-size: 15px;
+font-weight: 600;
+color: #ffffff;
+text-transform: uppercase;
+line-height: 32px;
+padding: 0 10px;
+margin: 0;
+}
+.sidebar .widget-content{
+float:left;
+width:100%;
+margin:0
+}
+ul.social-counter{
+margin:0 -5px
+}
+.social-counter li{
+float:left;
+width:25%;
+box-sizing:border-box;
+padding:0 5px;
+margin:10px 0 0
+}
+.social-counter li:nth-child(1),.social-counter li:nth-child(2),.social-counter li:nth-child(3),.social-counter li:nth-child(4){
+margin-top:0
+}
+.social-counter li a{
+display:block;
+height:40px;
+font-size:22px;
+color:#fff;
+text-align:center;
+line-height:40px;
+border-radius:2px;
+transition:opacity .17s
+}
+.social-counter li a:hover{
+opacity:.8
+}
+.list-label li{
+position:relative;
+display:block;
+padding:7px 0;
+border-top:1px dotted #ebebeb
+}
+.list-label li:first-child{
+padding-top:0;
+border-top:0
+}
+.list-label li:last-child{
+padding-bottom:0;
+border-bottom:0
+}
+.list-label li a{
+display:block;
+color:#333333;
+font-size:12px;
+font-weight:400;
+text-transform:capitalize;
+transition:color .17s
+}
+.list-label li a:before{
+content:"\f054";
+float:left;
+color:#333333;
+font-weight:400;
+font-family:FontAwesome;
+font-size:6px;
+margin:5px 3px 0 0;
+transition:color .17s
+}
+.list-label li a:hover{
+color:#3cc091
+}
+.list-label .label-count{
+position:relative;
+float:right;
+width:16px;
+height:16px;
+background-color:#3cc091;
+color:#fff;
+font-size:11px;
+font-weight:400;
+text-align:center;
+line-height:16px;
+border-radius:2px
+}
+.cloud-label li{
+position:relative;
+float:left;
+margin:0 5px 5px 0
+}
+.cloud-label li a{
+display:block;
+height:26px;
+background-color:#f2f2f2;
+color:#333333;
+font-size:12px;
+line-height:26px;
+font-weight:400;
+padding:0 10px;
+border-radius:2px;
+transition:all .17s ease
+}
+.cloud-label li a:hover{
+color:#fff;
+background-color:#3cc091
+}
+.cloud-label .label-count{
+display:none
+}
+.sidebar .FollowByEmail > .widget-title > h3{
+margin:0
+}
+.FollowByEmail .widget-content{
+position:relative;
+overflow:hidden;
+background-color:#f9f9f9;
+text-align:center;
+font-weight:400;
+box-sizing:border-box;
+padding:20px;
+border-radius:2px;
+border:1px solid #f0f0f0
+}
+.FollowByEmail .widget-content > h3{
+font-size:18px;
+color:#333333;
+font-weight:700;
+text-transform:uppercase;
+margin:0 0 13px
+}
+.FollowByEmail .before-text{
+font-size:13px;
+line-height:1.5em;
+margin:0 0 15px;
+display:block;
+padding:0 10px;
+overflow:hidden
+}
+.FollowByEmail .widget-content:after{
+content:'\f0e0';
+position:absolute;
+right:-15px;
+top:-15px;
+font-family:FontAwesome;
+font-size:50px;
+color:#f0f0f0;
+transform:rotate(21deg)
+}
+.FollowByEmail .follow-by-email-inner{
+position:relative
+}
+.FollowByEmail .follow-by-email-inner .follow-by-email-address{
+width:100%;
+height:32px;
+color:#333333;
+font-size:11px;
+font-family:inherit;
+padding:0 10px;
+margin:0 0 10px;
+box-sizing:border-box;
+border:1px solid #f0f0f0;
+border-radius:2px;
+transition:ease .17s
+}
+.FollowByEmail .follow-by-email-inner .follow-by-email-submit{
+width:100%;
+height:32px;
+font-family:inherit;
+font-size:11px;
+color:#fff;
+background-color:#3cc091;
+text-transform:uppercase;
+text-align:center;
+font-weight:700;
+cursor:pointer;
+margin:0;
+border:0;
+border-radius:2px;
+transition:opacity .17s ease
+}
+.FollowByEmail .follow-by-email-inner .follow-by-email-submit:hover{
+opacity:.85
+}
+#ArchiveList ul.flat li{
+color:#333333;
+font-size:13px;
+font-weight:400;
+padding:7px 0;
+border-bottom:1px dotted #eaeaea
+}
+#ArchiveList ul.flat li:first-child{
+padding-top:0
+}
+#ArchiveList ul.flat li:last-child{
+padding-bottom:0;
+border-bottom:0
+}
+#ArchiveList .flat li > a{
+display:block;
+color:#333333;
+transition:color .17s
+}
+#ArchiveList .flat li > a:hover{
+color:#3cc091
+}
+#ArchiveList .flat li > a:before{
+content:"\f054";
+float:left;
+color:#161619;
+font-weight:400;
+font-family:FontAwesome;
+font-size:6px;
+margin:5px 4px 0 0;
+display:inline-block;
+transition:color .17s
+}
+#ArchiveList .flat li > a > span{
+position:relative;
+float:right;
+width:16px;
+height:16px;
+background-color:#3cc091;
+color:#fff;
+font-size:11px;
+font-weight:400;
+text-align:center;
+line-height:16px;
+border-radius:2px
+}
+.PopularPosts .post{
+overflow:hidden;
+margin:20px 0 0
+}
+.PopularPosts .post:first-child{
+padding:0;
+margin:0;
+border:0
+}
+.PopularPosts .post-image-link{
+position:relative;
+width:80px;
+height:60px;
+float:left;
+overflow:hidden;
+display:block;
+vertical-align:middle;
+margin:0 12px 0 0;
+border-radius:4px
+}
+.PopularPosts .post-info{
+overflow:hidden
+}
+.PopularPosts .post-title{
+font-size:13px;
+font-weight:400;
+line-height:1.5em;
+margin:0 0 3px
+}
+.PopularPosts .post-title a{
+display:block;
+color:#333333;
+transition:color .17s
+}
+.PopularPosts .post:hover .post-title a{
+color:#3cc091
+}
+.PopularPosts .post-date:before{
+font-size:10px
+}
+.FeaturedPost .post-image-link{
+display:block;
+position:relative;
+width:100%;
+height:180px;
+overflow:hidden;
+margin:0 0 10px;
+border-radius:4px
+}
+.FeaturedPost .post-title{
+font-size:16px;
+overflow:hidden;
+font-weight:400;
+line-height:1.5em;
+margin:0 0 5px
+}
+.FeaturedPost .post-title a{
+color:#333333;
+display:block;
+transition:color .17s ease
+}
+.FeaturedPost .post-title a:hover{
+color:#3cc091
+}
+.Text{
+font-size:13px
+}
+.contact-form-widget form{
+font-weight:400
+}
+.contact-form-name{
+float:left;
+width:100%;
+height:30px;
+font-family:inherit;
+font-size:13px;
+line-height:30px;
+box-sizing:border-box;
+padding:5px 10px;
+margin:0 0 10px;
+border:1px solid #ebebeb;
+border-radius:2px
+}
+.contact-form-email{
+float:left;
+width:100%;
+height:30px;
+font-family:inherit;
+font-size:13px;
+line-height:30px;
+box-sizing:border-box;
+padding:5px 10px;
+margin:0 0 10px;
+border:1px solid #ebebeb;
+border-radius:2px
+}
+.contact-form-email-message{
+float:left;
+width:100%;
+font-family:inherit;
+font-size:13px;
+box-sizing:border-box;
+padding:5px 10px;
+margin:0 0 10px;
+border:1px solid #ebebeb;
+border-radius:2px
+}
+.contact-form-button-submit{
+float:left;
+width:100%;
+height:30px;
+background-color:#3cc091;
+font-size:13px;
+color:#fff;
+line-height:30px;
+cursor:pointer;
+box-sizing:border-box;
+padding:0 10px;
+margin:0;
+border:0;
+border-radius:2px;
+transition:background .17s ease
+}
+.contact-form-button-submit:hover{
+background-color:#202020
+}
+.contact-form-error-message-with-border{
+float:left;
+width:100%;
+background-color:#fbe5e5;
+font-size:11px;
+text-align:center;
+line-height:11px;
+padding:3px 0;
+margin:10px 0;
+box-sizing:border-box;
+border:1px solid #fc6262
+}
+.contact-form-success-message-with-border{
+float:left;
+width:100%;
+background-color:#eaf6ff;
+font-size:11px;
+text-align:center;
+line-height:11px;
+padding:3px 0;
+margin:10px 0;
+box-sizing:border-box;
+border:1px solid #5ab6f9
+}
+.contact-form-cross{
+margin:0 0 0 3px
+}
+.contact-form-error-message,.contact-form-success-message{
+margin:0
+}
+.BlogSearch .search-input{
+float:left;
+width:75%;
+height:30px;
+background-color:#fff;
+font-weight:400;
+font-size:13px;
+line-height:30px;
+box-sizing:border-box;
+padding:5px 10px;
+border:1px solid #ebebeb;
+border-right-width:0;
+border-radius:2px 0 0 2px
+}
+.BlogSearch .search-action{
+float:right;
+width:25%;
+height:30px;
+font-family:inherit;
+font-size:13px;
+line-height:30px;
+cursor:pointer;
+box-sizing:border-box;
+background-color:#3cc091;
+color:#fff;
+padding:0 5px;
+border:0;
+border-radius:0 2px 2px 0;
+transition:background .17s ease
+}
+.BlogSearch .search-action:hover{
+background-color:#202020
+}
+.Profile .profile-img{
+float:left;
+width:80px;
+height:80px;
+margin:0 15px 0 0;
+transition:all .17s ease
+}
+.Profile .profile-datablock{
+margin:0
+}
+.Profile .profile-data .g-profile{
+display:block;
+font-size:18px;
+color:#333333;
+font-weight:700;
+margin:0 0 5px;
+transition:color .17s ease
+}
+.Profile .profile-data .g-profile:hover{
+color:#3cc091
+}
+.Profile .profile-info > .profile-link{
+color:#333333;
+font-size:11px;
+margin:5px 0 0;
+transition:color .17s ease
+}
+.Profile .profile-info > .profile-link:hover{
+color:#3cc091
+}
+.Profile .profile-datablock .profile-textblock{
+display:none
+}
+.common-widget .LinkList ul li,.common-widget .PageList ul li{
+width:calc(50% - 5px);
+padding:7px 0 0
+}
+.common-widget .LinkList ul li:nth-child(odd),.common-widget .PageList ul li:nth-child(odd){
+float:left
+}
+.common-widget .LinkList ul li:nth-child(even),.common-widget .PageList ul li:nth-child(even){
+float:right
+}
+.common-widget .LinkList ul li a,.common-widget .PageList ul li a{
+display:block;
+color:#333333;
+font-size:13px;
+font-weight:400;
+transition:color .17s ease
+}
+.common-widget .LinkList ul li a:hover,.common-widget .PageList ul li a:hover{
+color:#3cc091
+}
+.common-widget .LinkList ul li:first-child,.common-widget .LinkList ul li:nth-child(2),.common-widget .PageList ul li:first-child,.common-widget .PageList ul li:nth-child(2){
+padding:0
+}
+#footer-wrapper{
+background-color:#1f2532
+}
+#footer-wrapper .container{
+position:relative;
+overflow:hidden;
+margin:0 auto;
+padding:25px 0
+}
+.footer-widgets-wrap{
+position:relative;
+display:flex;
+margin:0 -15px
+}
+#footer-wrapper .footer{
+display:inline-block;
+float:left;
+width:33.33333333%;
+box-sizing:border-box;
+padding:0 15px
+}
+#footer-wrapper .footer .widget{
+float:left;
+width:100%;
+padding:0;
+margin:25px 0 0
+}
+#footer-wrapper .footer .Text{
+margin:10px 0 0
+}
+#footer-wrapper .footer .widget:first-child{
+margin:0
+}
+.footer .widget > .widget-title > h3{
+position:relative;
+color:#f1ffff;
+font-size:12px;
+line-height:12px;
+font-weight:700;
+text-transform:uppercase;
+margin:0 0 20px;
+padding-bottom:10px;
+border-bottom:1px solid rgba(255,255,255,0.05)
+}
+.footer .widget > .widget-title > h3:before{
+position:absolute;
+content:'';
+background-color:#3cc091;
+width:35px;
+height:1px;
+bottom:-1px;
+left:0
+}
+.footer .post-image-link{
+background-color:rgba(255,255,255,0.05)
+}
+.footer .custom-widget .post-title a,.footer .PopularPosts .post-title a,.footer .FeaturedPost .post-title a,.footer .LinkList ul li a,.footer .PageList ul li a,.footer .Profile .profile-data .g-profile,.footer .Profile .profile-info > .profile-link{
+color:#f1ffff
+}
+.footer .custom-widget .post-title a:hover,.footer .PopularPosts .post-title a:hover,.footer .FeaturedPost .post-title a:hover,.footer .LinkList ul li a:hover,.footer .PageList ul li a:hover,.footer .Profile .profile-data .g-profile:hover,.footer .Profile .profile-info > .profile-link:hover{
+color:#3cc091
+}
+.footer .no-posts{
+color:#f1ffff
+}
+.footer .FollowByEmail .widget-content > h3{
+color:#f1ffff
+}
+.footer .FollowByEmail .widget-content{
+background-color:rgba(255,255,255,0.05);
+border-color:rgba(255,255,255,0.05)
+}
+.footer .FollowByEmail .before-text,#footer-wrapper .footer .Text{
+color:#aaa
+}
+.footer .FollowByEmail .follow-by-email-inner .follow-by-email-submit:hover{
+background:#202020
+}
+.footer .FollowByEmail .follow-by-email-inner .follow-by-email-address{
+background-color:rgba(255,255,255,0.05);
+color:#f1ffff;
+border-color:rgba(255,255,255,0.05)
+}
+.footer #ArchiveList .flat li > a{
+color:#f1ffff
+}
+.footer .list-label li,.footer .BlogArchive #ArchiveList ul.flat li{
+border-color:rgba(255,255,255,0.05)
+}
+.footer .list-label li:first-child{
+padding-top:0
+}
+.footer .list-label li a,.footer .list-label li a:before,.footer #ArchiveList .flat li > a,.footer #ArchiveList .flat li > a:before{
+color:#f1ffff
+}
+.footer .list-label li > a:hover,.footer #ArchiveList .flat li > a:hover{
+color:#3cc091
+}
+.footer .list-label .label-count,.footer #ArchiveList .flat li > a > span{
+background-color:rgba(255,255,255,0.05);
+color:#f1ffff
+}
+.footer .cloud-label li a{
+background-color:rgba(255,255,255,0.05);
+color:#f1ffff
+}
+.footer .cloud-label li a:hover{
+background-color:#3cc091;
+color:#fff
+}
+.footer .BlogSearch .search-input{
+background-color:rgba(255,255,255,0.05);
+color:#f1ffff;
+border-color:rgba(255,255,255,0.05)
+}
+.footer .contact-form-name,.footer .contact-form-email,.footer .contact-form-email-message{
+background-color:rgba(255,255,255,0.05);
+color:#f1ffff;
+border-color:rgba(255,255,255,0.05)
+}
+.footer .BlogSearch .search-action:hover,.footer .FollowByEmail .follow-by-email-inner .follow-by-email-submit:hover,.footer .contact-form-button-submit:hover{
+background-color:rgba(0,0,0,0.3)
+}
+#sub-footer-wrapper{
+background-color:rgba(255,255,255,0.02);
+color:#f1ffff;
+display:block;
+padding:0;
+width:100%;
+overflow:hidden;
+border-top:1px solid rgba(255,255,255,0.05)
+}
+#sub-footer-wrapper .container{
+overflow:hidden;
+margin:0 auto;
+padding:10px 0
+}
+#menu-footer{
+float:right;
+position:relative;
+display:block
+}
+#menu-footer .widget > .widget-title{
+display:none
+}
+#menu-footer ul li{
+float:left;
+display:inline-block;
+height:34px;
+padding:0;
+margin:0
+}
+#menu-footer ul li a{
+font-size:12px;
+font-weight:400;
+display:block;
+color:#f1ffff;
+line-height:34px;
+padding:0 10px;
+margin:0 0 0 5px;
+transition:color .17s ease
+}
+#menu-footer ul li:last-child a{
+padding:0 0 0 5px
+}
+#menu-footer ul li a:hover{
+color:#3cc091
+}
+#sub-footer-wrapper .copyright-area{
+font-size:12px;
+float:left;
+height:34px;
+line-height:34px;
+font-weight:400
+}
+#sub-footer-wrapper .copyright-area a{
+color:#3cc091;
+transition:color .17s
+}
+.hidden-widgets{
+display:none;
+visibility:hidden
+}
+.back-top{
+display:none;
+z-index:1010;
+width:32px;
+height:32px;
+position:fixed;
+bottom:25px;
+right:25px;
+cursor:pointer;
+overflow:hidden;
+font-size:13px;
+color:#fff;
+text-align:center;
+line-height:32px;
+border-radius:2px
+}
+.back-top:before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background-color:#3cc091;
+opacity:.5;
+transition:opacity .17s ease
+}
+.back-top:after{
+content:'\f077';
+position:relative;
+font-family:FontAwesome;
+font-weight:400;
+opacity:.8;
+transition:opacity .17s ease
+}
+.back-top:hover:before,.back-top:hover:after,.nav-active .back-top:after,.nav-active .back-top:before{
+opacity:1
+}
+.error404 #main-wrapper{
+width:100%!important;
+margin:0!important
+}
+.error404 #sidebar-wrapper{
+display:none
+}
+.errorWrap{
+color:#333333;
+text-align:center;
+padding:80px 0 100px
+}
+.errorWrap h3{
+font-size:160px;
+line-height:1;
+margin:0 0 30px
+}
+.errorWrap h4{
+font-size:25px;
+margin:0 0 20px
+}
+.errorWrap p{
+margin:0 0 10px
+}
+.errorWrap a{
+display:block;
+color:#3cc091;
+padding:10px 0 0
+}
+.errorWrap a i{
+font-size:20px
+}
+.errorWrap a:hover{
+text-decoration:underline
+}
+@media screen and (max-width: 1100px) {
+#outer-wrapper{
+max-width:100%
+}
+.row{
+width:100%
+}
+#ad-wrapper {
+padding: 0 20px;
+box-sizing: border-box;
+}
+#top-bar .container{
+box-sizing:border-box;
+padding:0 20px
+}
+#hot-wrapper{
+box-sizing:border-box;
+padding:0 20px
+}
+#header-wrap{
+height:auto
+}
+.header-header{
+height:auto;
+box-sizing:border-box;
+padding:25px 20px
+}
+.header-ads{
+max-width:70%
+}
+.header-menu{
+box-sizing:border-box;
+padding:0 20px
+}
+#content-wrapper{
+position:relative;
+box-sizing:border-box;
+padding:0 20px;
+margin:30px 0 0
+}
+#footer-wrapper .container{
+box-sizing:border-box;
+padding:25px 20px
+}
+#sub-footer-wrapper .container{
+box-sizing:border-box;
+padding:10px 20px
+}
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 980px) {
+#content-wrapper > .container{
+margin:0
+}
+.header-logo{
+max-width:100%;
+width:100%;
+text-align:center;
+padding:20px 0
+}
+.header-logo .header-image-wrapper{
+display:inline-block
+}
+#main-menu{
+display:none
+}
+.slide-menu-toggle,.mobile-menu{
+display:block
+}
+#header-wrap{
+padding:0
+}
+.header-header{
+background-color:#fff;
+padding:0
+}
+.header-header .container.row{
+width:98%
+}
+.header-ads{
+width:100%;
+max-width:100%;
+box-sizing:border-box;
+padding:0 20px
+}
+.header-ads .widget .widget-content{
+position:relative;
+padding:0;
+margin:0 auto
+}
+#header-inner a{
+display:inline-block!important
+}
+#main-wrapper,#sidebar-wrapper{
+width:100%;
+padding:0
+}
+.item #sidebar-wrapper{
+margin-top:20px
+}
+}
+@media screen and (max-width: 880px) {
+.footer-widgets-wrap{
+display:block
+}
+#footer-wrapper .footer{
+width:100%;
+margin-right:0
+}
+#footer-sec2,#footer-sec3{
+margin-top:25px
+}
+}
+@media screen and (max-width: 680px) {
+.post-read-link {
+display: none;
+}
+.index-post{
+width:100%
+}
+#menu-footer,#sub-footer-wrapper .copyright-area{
+width:100%;
+height:auto;
+line-height:inherit;
+text-align:center
+}
+#menu-footer{
+margin:10px 0 0
+}
+#sub-footer-wrapper .copyright-area{
+margin:10px 0
+}
+#menu-footer ul li{
+float:none;
+height:auto
+}
+#menu-footer ul li a{
+line-height:inherit;
+margin:0 3px 5px
+}
+}
+@media screen and (max-width: 560px) {
+#break-section .show-ticker > .widget-title {
+width: 24px;
+font-size: 0;
+text-align: center;
+padding: 0;
+}
+#break-section .widget > .widget-title > h3:before {
+float: none;
+margin: 0;
+}
+.top-bar-nav{
+display:none
+}
+.top-bar-social {
+width: 100%;
+text-align: center;
+position: relative;
+top: auto;
+right: auto;
+clear: both;
+margin-top: 10px;
+}
+.top-bar-social ul > li{
+float:none
+}
+.top-bar-social ul > li > a{
+margin:0 5px
+}
+.top-bar-social ul > li:last-child > a{
+padding:0 5px
+}
+.index-post .post-image-wrap{
+width:100%;
+margin:0 0 15px
+}
+.index-post .post-info{
+float:left;
+width:100%
+}
+.share-links li a span{
+display:none
+}
+.share-links li.facebook,.share-links li.twitter{
+width:32px
+}
+ul.related-posts{
+margin:0
+}
+.related-posts .related-item{
+width:100%;
+padding:0;
+margin:20px 0 0
+}
+.related-posts .item-0{
+margin:0
+}
+.related-posts .post-tag{
+display:none
+}
+.related-posts .post-image-link{
+width:80px;
+height:60px;
+float:left;
+margin:0 12px 0 0
+}
+.related-posts .post-title{
+font-size:13px;
+overflow:hidden;
+margin:0 0 5px
+}
+.post-reactions{
+display:none
+}
+}
+@media screen and (max-width: 440px) {
+.slick-arrow{display:none!important}
+.ticker-widget .post-tag {
+display: none;
+}
+.ticker-widget .post-title {
+float:none;
+}
+.ticker-widget:after {
+content: "";
+position: absolute;
+background: linear-gradient(to right,#fff0,#ebebeb);
+top: 3px;
+right: 1px;
+width: 50px;
+height: 24px;
+z-index: 4;
+}
+.queryMessage{
+text-align:center
+}
+.queryMessage a.show-more{
+width:100%;
+margin:10px 0 0
+}
+.item-post h1.post-title{
+font-size:24px
+}
+.about-author{
+text-align:center
+}
+.about-author .avatar-container{
+float:none;
+display:table;
+margin:0 auto 10px
+}
+#comments ol{
+padding:0
+}
+.errorWrap{
+padding:70px 0 100px
+}
+.errorWrap h3{
+font-size:120px
+}
+}
+@media screen and (max-width: 360px) {
+.about-author .avatar-container{
+width:60px;
+height:60px
+}
+}
+/* Google Ads under posts */
+#google-posts-ads{width: 100%;margin: 10px auto;}
+.google-photos-ads{height: 280px; width: 50%; float:right;}
+.google-photos-ads2{height: 280px; width: 50%; float:left;}
+.google-photo-ad, .google-photo-ad{height: 280px; width: 336px;margin: 0 auto;}
+@media only screen and (max-width: 768px) {
+.google-photos-ads, .google-photos-ads2{float: none; width: 100%;}
+.google-photos-ads{margin-bottom: 15px;}
+}
+/* Google Ads under posts */
+
+--></style>
+<style>
+/*-------Typography and ShortCodes-------*/
+.firstcharacter{float:left;color:#27ae60;font-size:75px;line-height:60px;padding-top:4px;padding-right:8px;padding-left:3px}.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{margin-bottom:15px;color:#2c3e50}blockquote{font-style:italic;color:#888;border-left:5px solid #27ae60;margin-left:0;padding:10px 15px}blockquote:before{content:'\f10d';display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-right:10px;color:#888}blockquote:after{content:'\f10e';display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:10px;color:#888}.button{background-color:#2c3e50;float:left;padding:5px 12px;margin:5px;color:#fff;text-align:center;border:0;cursor:pointer;border-radius:3px;display:block;text-decoration:none;font-weight:400;transition:all .3s ease-out !important;-webkit-transition:all .3s ease-out !important}a.button{color:#fff}.button:hover{background-color:#27ae60;color:#fff}.button.small{font-size:12px;padding:5px 12px}.button.medium{font-size:16px;padding:6px 15px}.button.large{font-size:18px;padding:8px 18px}.small-button{width:100%;overflow:hidden;clear:both}.medium-button{width:100%;overflow:hidden;clear:both}.large-button{width:100%;overflow:hidden;clear:both}.demo:before{content:"\f06e";margin-right:5px;display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.download:before{content:"\f019";margin-right:5px;display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.buy:before{content:"\f09d";margin-right:5px;display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.visit:before{content:"\f14c";margin-right:5px;display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:400;line-height:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.widget .post-body ul,.widget .post-body ol{line-height:1.5;font-weight:400}.widget .post-body li{margin:5px 0;padding:0;line-height:1.5}.post-body ul li:before{content:"\f105";margin-right:5px;font-family:fontawesome}pre{font-family:Monaco, "Andale Mono", "Courier New", Courier, monospace;background-color:#2c3e50;background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent);background-image:-moz-linear-gradient(rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent);background-image:-ms-linear-gradient(rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent);background-image:-o-linear-gradient(rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent);background-image:linear-gradient(rgba(0, 0, 0, 0.05) 50%, transparent 50%, transparent);-webkit-background-size:100% 50px;-moz-background-size:100% 50px;background-size:100% 50px;line-height:25px;color:#f1f1f1;position:relative;padding:0 7px;margin:15px 0 10px;overflow:hidden;word-wrap:normal;white-space:pre;position:relative}pre:before{content:'Code';display:block;background:#F7F7F7;margin-left:-7px;margin-right:-7px;color:#2c3e50;padding-left:7px;font-weight:400;font-size:14px}pre code,pre .line-number{display:block}pre .line-number a{color:#27ae60;opacity:0.6}pre .line-number span{display:block;float:left;clear:both;width:20px;text-align:center;margin-left:-7px;margin-right:7px}pre .line-number span:nth-child(odd){background-color:rgba(0, 0, 0, 0.11)}pre .line-number span:nth-child(even){background-color:rgba(255, 255, 255, 0.05)}pre .cl{display:block;clear:both}#contact{background-color:#fff;margin:30px 0 !important}#contact .contact-form-widget{max-width:100% !important}#contact .contact-form-name,#contact .contact-form-email,#contact .contact-form-email-message{background-color:#FFF;border:1px solid #eee;border-radius:3px;padding:10px;margin-bottom:10px !important;max-width:100% !important}#contact .contact-form-name{width:47.7%;height:50px}#contact .contact-form-email{width:49.7%;height:50px}#contact .contact-form-email-message{height:150px}#contact .contact-form-button-submit{max-width:100%;width:100%;z-index:0;margin:4px 0 0;padding:10px !important;text-align:center;cursor:pointer;background:#27ae60;border:0;height:auto;-webkit-border-radius:2px;-moz-border-radius:2px;-ms-border-radius:2px;-o-border-radius:2px;border-radius:2px;text-transform:uppercase;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-o-transition:all .2s ease-out;-ms-transition:all .2s ease-out;transition:all .2s ease-out;color:#FFF}#contact .contact-form-button-submit:hover{background:#2c3e50}#contact .contact-form-email:focus,#contact .contact-form-name:focus,#contact .contact-form-email-message:focus{box-shadow:none !important}.alert-message{position:relative;display:block;background-color:#FAFAFA;padding:20px;margin:20px 0;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#2f3239;border:1px solid}.alert-message p{margin:0 !important;padding:0;line-height:22px;font-size:13px;color:#2f3239}.alert-message span{font-size:14px !important}.alert-message i{font-size:16px;line-height:20px}.alert-message.success{background-color:#f1f9f7;border-color:#e0f1e9;color:#1d9d74}.alert-message.success a,.alert-message.success span{color:#1d9d74}.alert-message.alert{background-color:#DAEFFF;border-color:#8ED2FF;color:#378FFF}.alert-message.alert a,.alert-message.alert span{color:#378FFF}.alert-message.warning{background-color:#fcf8e3;border-color:#faebcc;color:#8a6d3b}.alert-message.warning a,.alert-message.warning span{color:#8a6d3b}.alert-message.error{background-color:#FFD7D2;border-color:#FF9494;color:#F55D5D}.alert-message.error a,.alert-message.error span{color:#F55D5D}.fa-check-circle:before{content:"\f058"}.fa-info-circle:before{content:"\f05a"}.fa-exclamation-triangle:before{content:"\f071"}.fa-exclamation-circle:before{content:"\f06a"}.post-table table{border-collapse:collapse;width:100%}.post-table th{background-color:#eee;font-weight:bold}.post-table th,.post-table td{border:0.125em solid #333;line-height:1.5;padding:0.75em;text-align:left}@media (max-width: 30em){.post-table thead tr{position:absolute;top:-9999em;left:-9999em}.post-table tr{border:0.125em solid #333;border-bottom:0}.post-table tr + tr{margin-top:1.5em}.post-table tr,.post-table td{display:block}.post-table td{border:none;border-bottom:0.125em solid #333;padding-left:50%}.post-table td:before{content:attr(data-label);display:inline-block;font-weight:bold;line-height:1.5;margin-left:-100%;width:100%}}@media (max-width: 20em){.post-table td{padding-left:0.75em}.post-table td:before{display:block;margin-bottom:0.75em;margin-left:0}}
+.FollowByEmail {
+    clear: both;
+}
+.widget .post-body ol {
+    padding: 0 0 0 15px;
+}
+.post-body ul li {
+    list-style: none;
+}
+</style>
+<!-- Global Variables -->
+<script type='text/javascript'>
+//<![CDATA[
+// Global variables with content. "Available for Edit"
+var monthFormat = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    noThumbnail = "https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w680/nth.png",
+    postPerPage = 7,
+    fixedSidebar = true,
+    commentsSystem = "blogger",
+    disqusShortname = "soratemplates";
+//]]>
+</script>
+<!-- Google Analytics -->
+<script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-160269368-1', 'auto', 'blogger');
+        ga('blogger.send', 'pageview');
+      </script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=708822688834956217&amp;zx=879ec48e-f0a8-4122-8247-118a07961500' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=708822688834956217&amp;zx=879ec48e-f0a8-4122-8247-118a07961500' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4042780438239805&host=ca-host-pub-1556223355139109" crossorigin="anonymous"></script>
+
+<!-- data-ad-client=ca-pub-4042780438239805 -->
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Source+Sans+Pro"></head>
+<body class='item'>
+<amp-auto-ads data-ad-client='ca-pub-4042780438239805' type='adsense'>
+</amp-auto-ads>
+<!-- Theme Options -->
+<div class='theme-options' style='display:none'>
+<div class='sora-panel section' id='sora-panel' name='Theme Options'><div class='widget LinkList' data-version='2' id='LinkList70'>
+
+          <style type='text/css'>
+          
+
+                #outer-wrapper{max-width:1100px} 
+              
+
+          </style>
+        
+</div><div class='widget LinkList' data-version='2' id='LinkList71'>
+
+          <script type='text/javascript'>
+          //<![CDATA[
+          
+
+              var commentsSystem = "blogger";
+            
+
+              var fixedSidebar = true;
+            
+
+              var postPerPage = 6;
+            
+
+          //]]>
+          </script>
+        
+</div></div>
+</div>
+<!-- Outer Wrapper -->
+<div id='outer-wrapper'>
+<!-- Header Wrapper -->
+<div id='header-wrap'>
+<div id='break-wrapper-outer'>
+<div class='row' id='break-wrapper'>
+<div class='section' id='break-section' name='News Ticker'><div class='widget HTML' data-version='2' id='HTML200'>
+</div></div>
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='header-header'>
+<div class='container row'>
+<div class='top-bar-nav section' id='top-bar-nav' name='Top Navigation'><div class='widget LinkList' data-version='2' id='LinkList72'>
+<div class='widget-content'>
+<ul>
+<li><a href='principale.html'>Home</a></li>
+<li><a href='/contact.html'>Contact Us</a></li>
+</ul>
+</div>
+</div></div>
+<!-- Top Social -->
+<div class='top-bar-social social section' id='top-bar-social' name='Social Top'><div class='widget LinkList' data-version='2' id='LinkList73'>
+<div class='widget-content'>
+<ul>
+<li class='facebook'><a href='https://www.facebook.com' target='_blank' title='facebook'></a></li>
+<li class='twitter'><a href='https://twitter.com' target='_blank' title='twitter'></a></li>
+<li class='instagram'><a href='https://www.instagram.com' target='_blank' title='instagram'></a></li>
+<li class='C++'><a href='https://www.coodemaroc.com/2021/05/c.html' target='_blank' title='C++'></a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='header-menu'>
+<div class='mobile-menu'></div>
+<div class='container row'>
+<span class='slide-menu-toggle'></span>
+<div class='main-menu section' id='main-menu' name='Main Menu'><div class='widget LinkList' data-version='2' id='LinkList74'>
+<ul id='main-menu-nav' role='menubar'>
+<li><a href='BASE DE DONNÉES.html' role='menuitem'>Base de données </a></li>
+<li><a href='pythonC.html' role='menuitem'>Python (exercices)</a></li>
+<li><a href='algorithme.html' role='menuitem'>Algorithme </a></li>
+<li><a href='SQL.html' role='menuitem'>SQL (exercices)</a></li>
+<li><a href='java.html' role='menuitem'>JAVA</a></li>
+<li><a href='javaPoo.html' role='menuitem'>POO en JAVA</a></li>
+<li><a href='cour.html' role='menuitem'>C++</a></li>
+</ul>
+</div></div>
+<span class='show-search'></span>
+</div>
+</div>
+</div>
+<div class='clearfix'></div>
+<div class='row' id='ad-wrapper'>
+<div class='clearfix'></div>
+</div>
+<!-- Content Wrapper -->
+<div class='row' id='content-wrapper'>
+<div class='container'>
+<!-- Main Wrapper -->
+<div id='main-wrapper'>
+<div class='main section' id='main' name='Main Posts'><div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container item-post-wrap'>
+<div class='blog-post hentry item-post'>
+<script type='application/ld+json'>{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.coodemaroc.com/2022/10/sql.html"
+  },
+  "headline": "Exercices corrigés en Langage  SQL","description": "&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; \u0026lt;\u0026lt; Langage SQL \u0026gt;\u0026gt; Exercice 1 Soit la base de données relationnelle des vols quotidiens d&#8217;une compagnie a...","datePublished": "2022-10-25T10:39:00-07:00",
+  "dateModified": "2023-10-07T04:14:51-07:00","image": {
+    "@type": "ImageObject","url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/w1200-h630-p-k-no-nu/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg",
+    "height": 630,
+    "width": 1200},"publisher": {
+    "@type": "Organization",
+    "name": "Blogger",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60",
+      "width": 206,
+      "height": 60
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "Le chemin vers la programmation"
+  }
+}
+<h1 class='post-title'> Exercices corrigés en Langage  SQL </h1>
+<div class='post-body post-content'>
+<div id='aim17801641658240523640'>
+</div>
+<div style='clear:both; margin:10px 0'>
+<script async='async' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+<ins class='adsbygoogle' data-ad-client='ca-pub-4042780438239805' data-ad-format='fluid' data-ad-layout='in-article' data-ad-slot='1970642660' style='display:block; text-align:center;'></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div id='aim27801641658240523640'>
+<div><span style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; font-weight: bold; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s750/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="422" data-original-width="750" height="180" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s320/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg" width="320" /></a></div><br /></span></span></div><div><span style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #38761d; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &lt;&lt; Langage SQL &gt;&gt;</b></span></span></div><div><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><br /></span></b></div><div><div><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 1</span></b></div><div><b><span style="color: #0b5394; font-size: medium;">Soit la base de données relationnelle des vols quotidiens d&#8217;une compagnie aérienne qui&nbsp;</span></b></div><div><b><span style="color: #0b5394; font-size: medium;">contient les tables Avion, Pilote et Vol.</span></b></div><div><b><span style="font-size: medium;"><br /></span></b></div><div><b><span style="color: #800180; font-size: medium;">Table Avion (NA : numéro d'avion (clé primaire),&nbsp;</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;Nom : nom d'avion,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;Capacite : capacité d'avion de type entier,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;Localite : ville de localité de l&#8217;avion )</span></b></div><div><b><span style="color: #800180; font-size: medium;"><br /></span></b></div><div><b><span style="color: #800180; font-size: medium;">Table Pilote (NP : numéro pilote,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;Nom : nom du pilote ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;Adresse : adresse du pilote )</span></b></div><div><b><span style="color: #800180; font-size: medium;"><br /></span></b></div><div><b><span style="color: #800180; font-size: medium;">Table Vol (NV : numéro de vol ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;NP : numéro de pilote,</span></b></div><div><b><span style="color: #800180; font-size: medium;">NA : numéro avion ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;VD : ville de départ ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">VA : ville d&#8217;arrivée ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;HD : heure de départ ,</span></b></div><div><b><span style="color: #800180; font-size: medium;">&nbsp;HA : heure d&#8217;arrivée )</span></b></div></div><div><b><span style="color: #800180; font-size: medium;"><br /></span></b></div><div><b><span style="color: #2b00fe; font-size: large;">Exprimez en SQL les requêtes suivantes:</span></b></div><div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">1) Insérer les avions suivants dans la table Avion :</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">(100, AIRBUS, 300, RABAT), (101,B737,250,CASA), (101, B737,220,RABAT)</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">2) Afficher tous les avions</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">3) Afficher tous les avions par ordre croissant sur le nom</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">4) Afficher les noms et les capacités des avions</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">5) Afficher les localités des avions sans redondance&nbsp;</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">6) Afficher les avions dans la localité est Rabat ou Casa</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">7) Modifier la capacité de l&#8217;avion numéro 101, la nouvelle capacité et 220</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">8) Supprimer les avions dans la capacité et inférieure à 200</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">9) Afficher la capacité maximale, minimale, moyenne des avions</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">10) Afficher les données des avions dont la capacité et la plus basse&nbsp;</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">11) Afficher les données des avions dont la capacité et supérieure à la capacité moyenne</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">12) Afficher le nom et l&#8217;adresse des pilotes assurant les vols IT100 et IT104</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">13) Afficher les numéros des pilotes qui sont en service</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">14) Afficher les numéros des pilotes qui ne sont pas en service</span></div><div style="font-size: large; font-weight: bold;"><span style="color: #800180;">15) Afficher les noms des pilotes qui conduisent un AIRBUS</span></div><div style="font-size: large; font-weight: bold;"><br /></div><div><div><b style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 1</b></span></b><br /></div><div><span><div><br /></div><div><span style="color: #351c75; font-size: large;"><b>1)</b>&nbsp;&nbsp;<b>Insert into avion values (100, 'AIRBUS', 300, 'RABAT');</b></span></div><div><b><span style="color: #351c75; font-size: large;">Insert into avion values (101, 'B737', 250, 'CASA');</span></b></div><div><b><span style="color: #351c75; font-size: large;">Insert into avion values (101, 'B737',&nbsp; 220, 'RABAT');</span></b></div><div><b><span style="color: #351c75; font-size: large;"><br /></span></b></div><div><span style="color: #351c75; font-size: large;"><b>2)</b>&nbsp;&nbsp;<b>select * from avion;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>3)</b>&nbsp;&nbsp;<b>select * from avion</b>&nbsp;<b>order by Nom asc;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>4)</b>&nbsp;&nbsp;<b>select nom, Capacite from avion;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>5)</b>&nbsp;&nbsp;<b>select distinct Localite from avion;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>6)</b>&nbsp;&nbsp;<b>select * from avion</b>&nbsp;<b>where Localite='Rabat' or Localite='Casa' ;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>7)</b>&nbsp;<b>Update avion</b>&nbsp;&nbsp;<b>set Capacite=220</b>&nbsp;&nbsp;<b>where NA=101;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>8)</b>&nbsp;<b>Delete from avion&nbsp;</b><b>where Capacite &lt;200;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>9)</b>&nbsp;<b>Select Max(Capacite), Min(Capacite), Avg(Capacite)</b>&nbsp;<b>from avion;</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>10)</b>&nbsp;<b>Select * from avion</b>&nbsp;<b>where Capacite=min(Capacite);</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><span style="color: #351c75; font-size: large;"><b>11)</b>&nbsp;<b>Select * from avion</b>&nbsp;<b>where Capacite&gt;=avg(Capacite);</b></span></div><div><span style="color: #351c75; font-size: large;"><b><br /></b></span></div><div><div><div><b><span style="font-size: large;"><span style="color: #351c75;">12)</span><span style="color: #351c75;">&nbsp;</span><span style="color: #351c75;">Select Nom, Adresse from Pilote, Vol</span>&nbsp;<span style="color: #351c75;">where Pilote.NP = Vol.NP</span><span style="color: #351c75;">&nbsp;</span><span style="color: #351c75;">and NV='IT100' and NV='IT104';</span></span></b></div><div><b style="color: #351c75;"><span style="font-size: large;"><br /></span></b></div></div><div><span style="color: #351c75;"><b><span style="font-size: large;">13) Select NP from Vol;</span></b></span></div></div><div><span style="color: #351c75; font-size: large;"><b><div><br /></div><div>14) Select NP from Pilote</div><div>where NP not in (select NP from Vol);</div><div><br /></div><div>15) Select Pilote.NOM from Pilote, Vol, Avion where Pilote.NP = Vol.NP and Avion.NA = Vol.NA and Avion.NOM='AIRBUS';</div></b></span></div></span></div><div><b style="text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: large; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></b></div></div></div><div><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><br /></span></b></div><div><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 2</span></b></div><p><span><span style="font-size: large;"><b>On considère la base de données d&#8217;un festival de musique : Dans une représentation peut participer un ou plusieurs musiciens. Un musicien ne peut participer qu&#8217;à une seule représentation.<br /></b></span></span></p><p><span style="font-size: large;"><b><span><span><span style="color: #800180;">Representation(N_Rep, titre_Rep, lieu)<br /></span></span></span><span><span><span style="color: #800180;">Musicien (N_mus&nbsp;, nom , #N_Rep)<br /></span></span></span><span><span><span style="color: #800180;">Programmer (Date , #N_Rep&nbsp;, tarif)</span></span></span></b></span></p><p><span style="font-size: large;"><b><span><span><span style="color: #800180;"><br /></span></span></span><span><span style="color: #2b00fe;">Exprimez en SQL les requêtes suivantes :</span></span></b></span></p><p><span style="font-size: large;"><span><span><b>1)Donner La liste des titres des représentations.</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>2)Donner La liste des titres des représentations ayant lieu au &#171; théâtre Rabat &#187;.</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>3)Donner La liste des noms des musiciens et les titres des représentations auxquelles ils participent.</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>4)Donner La liste des titres des représentations, les lieux et les tarifs du 21/07/2022.</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>5)Donner Le nombre des musiciens qui participent à la représentations n&#176;15.</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>6)Donner Les titres des représentations et leurs dates dont le tarif ne dépasse pas 30DH.</b></span></span></span></p><p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 2</b></span></b></p><div><br /></div><p><span style="font-size: large;"><b><span><span><span style="color: red;"></span></span></span><span><span>1)SELECT titre_Rep FROM Representation;</span></span></b></span></p><p><span style="font-size: large;"><span><span><b>2) SELECT titre_Rep FROM Representation where lieu="Rabat";</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>3)SELECT M.nom, R.titre_Rep FROM Musicien M , Representation R where R.Num_rep=M.Num_rep;</b></span></span></span></p><p><span style="font-size: large;"><b><span><span>4)SELECT R.titre_Rep, R.lieu,P.tarif FROM Programmer P, Representation R WHERE</span></span><span><span>&nbsp;P.Num_rep = R.Num_rep and P.date="21-07-2022";</span></span></b></span></p><p><span style="font-size: large;"><span><span><b>5)SELECT COUNT (*) FROM Musicien where Num_rep =15;</b></span></span></span></p><p><span style="font-size: large;"><span><span><b>6)SELECT R.titre_Rep , P.Date FROM Representation R ,&nbsp; Programmer P where R.N_Rep=P.N_Rep and P.tarif&lt;=30 ;</b></span></span></span></p><p><span style="font-size: large;"><br /></span></p><p><span style="font-size: large;"><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 3</span></b><br /><b>On considère la base de données suivante:<br /><span style="color: #800180;">Départements(N_dep, Nom_dep, VILLE)<br />Employes(N_E, Nom_E, PROF, SAL, COMM, #N_dep)</span><br /><br /><span style="color: #2b00fe;">Exprimez en SQL les requêtes suivantes :</span><br /><br />1)Donnez la liste des employés ayant une commission<br />2)Donnez les noms, emplois et salaires des employés par emploi croissant, et pour chaque emploi, par salaire décroissant<br />3)Donnez le salaire moyen des employés<br />4)Donnez le salaire moyen du département Production<br />5)Donnes les numéros de département et leur salaire maximum<br />6)Donnez les différentes professions et leur salaire moyen<br />7)Donnez le salaire moyen par profession le plus bas<br />8)Donnez le ou les emplois ayant le salaire moyen le plus bas, ainsi que ce salaire moyen</b></span></p><p><span style="font-size: large;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 3</b></span></b></p><div><br /></div><p><span style="font-size: large;"><b>1)SELECT * FROM Employes WHERE COMM NOT NULL;<br /><br />2)SELECT Nom_E, PROF, SAL FROM Employes ORDER BY PROF ASC, SAL DESC ;<br /><br /></b></span></p><p><span style="font-size: large;"><span><span><b>3)SELECT AVG(SAL) FROM Employes ;<br /><br />4)SELECT AVG(E.SAL) FROM Employes E , Departement D where E.N_dep=D.N_dep&nbsp; and D.Nom_dep="production" ;<br /><br />5)SELECT N_dep, MAX(SAL) FROM Employes GROUP BY&nbsp; &nbsp;N_dep ;<br /><br /><br />6)SELECT PROF, MAX(SAL) FROM Employes GROUP BY PROF ;<br /><br />7)SELECT PROF, AVG(SAL) as moy FROM Employes<br />GROUP BY PROF&nbsp; ORDER BY moy ASC&nbsp; LIMIT 1 ;</b></span></span></span></p><p><span style="font-size: large;"><span><span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 4</span></b></span></span></span></p><p><span style="font-size: large;"><span><span><b>On considère la base de données suivante relatif à la gestion des notes annuelles d&#8217;une promotion d&#8217;étudiants:<br /><br /><span style="color: #800180;">ETUDIANT(NEtudiant, Nom, Prenom)<br />MATIERE(CodeMat, NomMat, CoeffMat)<br />EVALUER(#NEtudiant, #CodeMat, Date, Note)</span><br /><br /><span style="color: #2b00fe;">Exprimez en SQL les requêtes suivantes:</span><br /><br />1) Quel est le nombre total d&#8217;étudiants ?<br />2) Quelles sont, parmi l&#8217;ensemble des notes, la note la plus haute et la note la plus basse ?<br />3) Quelles sont les moyennes de chaque étudiant dans chacune des matières ?<br />4)Quelles sont les moyennes par matière ? Avec la vue MGETU de la question 3 ( MOYETUMAT)<br />5)Quelle est la moyenne générale de chaque étudiant ? Avec la vue MGETU de la question 3 ( MOYETUMAT)<br />6) Quelle est la moyenne générale de la promotion ? Avec la vue MGETU de la question 5 :<br />7) Quels sont les étudiants qui ont une moyenne générale supérieure ou égale à la moyenne générale de la promotion? Avec la vue MGETU de la question 5</b></span></span></span></p><p><span style="font-size: large;"><span><span><b style="color: red;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b></span></span></span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 4</b></span></b></p><div><br /></div><p><span style="font-size: large;"><b>1) SELECT count(*) FROM ETUDIANT ;<br /><br />2) SELECT MIN(Note) as &#8217;plus basse note&#8217;, MAX(Note) as &#8217;plus haute note&#8217; FROM EVALUER ;<br /><br />3) SELECT E.NEtudiant, M.NomMat, AVG(EV.Note) AS MoyEtuMat<br />FROM EVALUER EV, MATIERE M, ETUDIANT E WHERE EV.CodeMat = M.CodeMat AND EV.NEtudiant = E.NEtudiant GROUP BY E.NEtudiant, M.NomMat&nbsp; ;<br /><br />4)SELECT NomMat, AVG(MoyEtuMat) FROM MOYETUMAT GROUP BY NomMat ;<br /><br />5) SELECT NEtudiant, SUM (MoyEtuMat*CoeffMat)/SUM(CoeffMat) AS MgEtu<br />FROM MOYETUMAT GROUP BY NEtudiant ;<br /><br />6)SELECT AVG(MgEtu) FROM MGETU ;<br /><br />7) SELECT NEtudiant , Nom , Prenom , MgEtu FROM MGETU<br />WHERE MgEtu &gt;= (SELECT AVG(MgEtu) FROM MGETU) ;<!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_220811_104012_709.sdoc--><br /><br />8)SELECT PROF FROM Employes GROUP BY PROF<br />HAVING AVG(SAL)=(SELECT AVG(SAL) as moy FROM Employes&nbsp; &nbsp;GROUP BY PROF ORDER BY moy ASC LIMIT 1) ;</b></span></p><p><span style="font-size: large;"><span><span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 5</span></b></span></span></span></p><p><span style="font-size: large;"><b>On considère la base de données suivante:</b></span></p><p><span style="font-size: large;"><span><span><b><br /><span style="color: #800180;">Developpeur (NumDev, NomDev, AdrDev, EmailDev, TelDev)<br />Projet (NumProj, TitreProj, DateDeb, DateFin)<br />Logiciel (CodLog, NomLog, PrixLog, #NumProj)<br />Realisation (#NumProj, #NumDev)</span><br /><br /><span style="color: #2b00fe;">Exprimez en SQL les requêtes suivantes:</span><br /><br />1)afficher les noms et les prix des logiciels appartenant au projet ayant comme titre &#171; gestion de stock &#187;, triés dans l&#8217;ordre décroissant des prix .<br /><br />2)afficher le total des prix des logiciels du projet numéro 10. Lors de l&#8217;affichage, le titre de la colonne sera &#171; cours total du projet &#187;.<br /><br />3)Afficher le nombre de développeurs qui ont participé au projet intitulé &#171; gestion de stock &#187;<br /><br />4)Afficher les projets qui ont plus que 5 logiciels.<br /><br />5) Les numéros et noms des développeurs qui ont participés dans tout les projets.<br /><br />6)Afficher Les numéros de projets dans lesquelles tous les développeurs y participent dans sa réalisation.</b></span></span></span></p><p><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 5</b></span></b></p><p><span style="font-size: large;"><span></span></span></p><p style="-webkit-text-stroke-width: 0px;"><span><span><span><span style="color: #0b5394; font-size: large;"><b>1)SELECT L.NomLog, L.PrixLog FROM Logiciel L , Projet P where&nbsp; L.NumProj =P.NumProj and P.TitreProj= "gestion&#9251;de&#9251;stock"<br />ORDER BY L.PrixLog DESC ;<br /><br />2) SELECT SUM(PrixLog) as "cout&#9251;total&#9251;du&#9251;projet" FROM Logiciel WHERE NumPRoj=10 ;<br /><br /><br />3) SELECT count(*) FROM Developpeur D , Realisation R,&nbsp;</b><b>Projet P where</b><b>&nbsp;D.NumDev =R.NumDev&nbsp; and&nbsp; &nbsp;P.NumProj=&nbsp; R.NumProj ;<br /><br /><br />4) SELECT NumProj, TitreProj FROM PRojet P , Logiciel L where P.NumProj=L.NumProj<br />GROUP BY NumProj, TitreProj<br />HAVING count(*)&gt;5 ;<br /><br /><br />5) SELECT NumDev, NomDev FROM Developpeur D , Realisation R where D.NumDev = R.NumDev<br />GROUP BY NumDev, NomDev<br />HAVING count(*)=(SELECT COUNT(*) FROM Projet) ;<br /><br />6) SELECT NumProj, TitreProj FROM Projet P , Realisation R where P.NumProj=R.NumProj<br />GROUP BY NumProj, TitreProj<br />HAVING count(*)=(SELECT COUNT(*) FROM Developpeur);</b></span></span></span></span></p><p style="-webkit-text-stroke-width: 0px;"><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 6</span></b><span style="font-size: large;"><b><span style="color: #0b5394;">&nbsp;</span></b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="font-size: large;"><b>Soit la base de données "gestion_projet" permettant de gérer les projets relatifs au développement de logiciels suivante :</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="font-size: large;"><b><span style="color: #38761d;">Developpeur</span><span style="color: #800180;"> (<u>NumDev</u>, NomDev, AdrDev, EmailDev, TelDev)</span></b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="font-size: large;"><b><span style="color: #38761d;">Projet</span><span style="color: #800180;"> (<u>NumProj</u>, TitreProj, DateDeb, DateFin)</span></b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="font-size: large;"><b><span style="color: #38761d;">Logiciel</span><span style="color: #800180;"> (<u>CodLog</u>, NomLog, PrixLog, #NumProj)</span></b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="font-size: large;"><b><span style="color: #38761d;">Realisation</span><span style="color: #800180;"> (#NumProj, #NumDev)</span></b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #2b00fe; font-size: large;"><b>Ecrire en SQL les requêtes suivantes :</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>1. Créer les tables &#171; Projet &#187; et &#171; Logiciel &#187;. préciser clairement les types des données.</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>2. Afficher les noms et les prix des logiciels appartenant au projet ayant comme titre &#171; gestion de stock &#187;, triés&nbsp;</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>dans l&#8217;ordre décroissant des prix.</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394;"><b><span style="font-size: large;">3. Afficher le total des prix des logiciels du projet numéro 10. Lors de l&#8217;affichage, le titre de la colonne sera &#171;&nbsp;</span></b></span><b style="color: #0b5394;"><span style="font-size: large;">coût total du projet &#187;.</span></b></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>4. Afficher le nombre de développeurs qui ont participé au projet intitulé &#171; gestion de stock &#187;.</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>5. Afficher les projets qui ont plus que 5 logiciels.</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>6. Les numéros et noms des développeurs qui ont participés dans tous les projets.</b></span></p><p style="-webkit-text-stroke-width: 0px;"><span><span><span><b><span style="color: #0b5394; font-size: large;"></span></b></span></span></span></p><p style="-webkit-text-stroke-width: 0px;"><span style="color: #0b5394; font-size: large;"><b>7. Reporter la date de fin des projets dont le titre contient &#171; Web &#187; à la date &#171; 17/04/2022 &#187;</b></span></p><p><span style="font-size: large;"><span><span><b style="color: red;">&nbsp; &nbsp; &nbsp; &nbsp;</b></span></span></span><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">Corrigé de l&#8217;exercice 6</b></span></b></p><p><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;"><br /></b></span></b></p><p><span style="color: #073763; font-size: large;"><b>1)&nbsp;</b><b>CREATE TABLE Projet (</b></span></p><p><span style="color: #073763; font-size: large;"><b>NumProj INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;TitreProj VARCHAR(40),</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;DateDeb Date,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;DateFin Date,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;)</b></span></p><p><span style="color: #073763; font-size: large;"><b>ENGINE=InnoDB;&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>CREATE TABLE Logiciel (</b></span></p><p><span style="color: #073763; font-size: large;"><b>CodeLog INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;NomLog VARCHAR(40),</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;PrixLog DECIMAL,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;NumProj INT UNSIGNED,</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;CONSTRAINT fk_projet_numero&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;FOREIGN KEY (NumProj)</b></span></p><p><span style="color: #073763; font-size: large;"><b>&nbsp;REFERENCES Projet(NumProj)&nbsp;</b><b>)</b></span></p><p><span style="color: #073763; font-size: large;"><b>ENGINE=InnoDB;&nbsp;</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>2)&nbsp;</b></span><b style="color: #073763;">SELECT L.NomLog, L.PrixLog&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>FROM Logiciel L&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>INNER JOIN Projet P ON L.NumProj=P.NumProj&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>WHERE P.TitreProj="gestion&#9251;de&#9251;stock"</b></span></p><p><span style="color: #073763; font-size: large;"><b>ORDER BY L.PrixLog DESC</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>3)&nbsp;</b></span><b style="color: #073763;">SELECT SUM(PrixLog) as "cout&#9251;total&#9251;du&#9251;projet"</b></span></p><p><span style="color: #073763; font-size: large;"><b>FROM Logiciel&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>WHERE NumPRoj=10&nbsp;</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>4)&nbsp;</b></span><b style="color: #073763;">SELECT count(*)</b></span></p><p><span style="color: #073763; font-size: large;"><b>FROM Developpeur D&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>INNER JOIN Realisation R ON D.NumDev=R.NumDev&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>INNER JOIN Projet P ON P.NumProj=R.NumProj&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>WHERE P.TitreProj="gestion&#9251;de&#9251;stock"</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>5)&nbsp;</b></span><b style="color: #073763;">SELECT NumProj, TitreProj&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>FROM Projet P&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>INNER JOIN Logiciel L ON P.NumProj=L.NumProj&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>GROUP BY NumProj, TitreProj&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>HAVING count(*)&gt;5</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>6)&nbsp;</b></span><b style="color: #073763;">SELECT NumDev, NomDev&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>FROM Developpeur D&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>INNER JOIN Realisation R ON D.NumDev=R.NumDev</b></span></p><p><span style="color: #073763; font-size: large;"><b>GROUP BY NumDev, NomDev</b></span></p><p><span style="color: #073763; font-size: large;"><b>HAVING count(*)=(SELECT COUNT(*) FROM Projet)&nbsp;</b></span></p><p><span style="font-size: large;"><span style="color: #073763;"><b>7)&nbsp;</b></span><b style="color: #073763;">UPDATE Projet</b></span></p><p><span style="color: #073763; font-size: large;"><b>SET DateFin = '17/04/2022'</b></span></p><p><span style="text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #073763; font-size: large; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b><span style="text-indent: 0px;"></span></b></span></span></p><p><span style="color: #073763; font-size: large;"><b>WHERE TitreProj like &#8216;%Web%&#8217; ;</b></span></p><p><span style="color: #073763; font-size: large;"><b><br /></b></span></p><p><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;">Exercice 7</span></b></p><p><span style="font-size: large;"><b>On considère la base de données suivante:</b></span></p><p><span style="color: #800180; font-size: large;"><b>C</b><b>lient (</b><b><u>IdCli</u> ,</b><b>nom,ville</b><b>)</b></span></p><p><span style="color: #800180; font-size: large;"><b>Produit (&nbsp;</b><b><u>IdPro</u>,&nbsp;</b><b>Nom, m</b><b>arque,&nbsp;</b><b>Prix,</b><b>Qstock )&nbsp;</b></span></p><p><span style="color: #800180; font-size: large;"><b>Vente (#</b><b>IdCL,#</b><b>IdPro,&nbsp;</b><b>date ,</b><b>qte)</b></span></p><p><span style="color: #2b00fe; font-size: large;"><b>Exprimer en SQL les requêtes suivantes :</b></span></p><p><span style="color: #073763; font-size: large;"><b>1. Donner les différentes marques de produit.</b></span></p><p><span style="color: #073763; font-size: large;"><b>2. Lister les produits de marque IBM, Apple ou Asus.</b></span></p><p><span style="color: #073763; font-size: large;"><b>3. Donner les noms des clients qui ont acheté le produit 'p1'.</b></span></p><p><span style="color: #073763; font-size: large;"><b>4. Donner les noms des produits qui n'ont pas été acheté.</b></span></p><p><span style="color: #073763; font-size: large;"><b>5. Donner les noms des clients ayant acheté un produit en quantité supérieure à chacune des quantités de produits&nbsp;</b></span></p><p><span style="color: #073763; font-size: large;"><b>achetées par le client 'c1'.</b></span></p><p><span style="color: #073763; font-size: large;"><b>6. Donner les noms des produits moins chers que la moyenne des prix de tous les produits.</b></span></p><p></p><p><span style="color: #073763; font-size: large;"><b>7. Supprimer les ventes des clients de Fès antérieures au 01-mar-2022.</b></span></p><p><b style="font-size: 18.6667px; text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #c00000; font-size: 18pt; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><b style="color: red; font-size: x-large; text-indent: 0px;">&nbsp; &nbsp; &nbsp; &nbsp; Corrigé de l&#8217;exercice 7</b></span></b></p><div><span style="text-indent: -24px;"><span face="&quot;Calibri&quot;,&quot;sans-serif&quot;" style="color: #0b5394; font-size: large; line-height: 27.6px; mso-ansi-language: FR; mso-ascii-theme-font: minor-latin; mso-bidi-language: AR-SA; mso-bidi-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-language: EN-US; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;"><span style="text-indent: 0px;"><div style="font-weight: bold;">1) select Distinct&nbsp; p.marque from&nbsp; produit p</div><div style="font-weight: bold;">2)select * from&nbsp; produit p where p.marque in ('IBM', 'APPEL', 'ASUS')</div><div style="font-weight: bold;">3)select c.nom from client c where IdCli in( select&nbsp; v.IdCli from vente v where p.IdPro='p1')</div><div style="font-weight: bold;">4)select p.nom from produit p where not exists (select *&nbsp; from vente v&nbsp; where v.Idpro= p.IdPro)</div><div><b>5) select v.IdCli from vente v where v.qte&gt;=all(select w.qte from vente w where w.IdCli = 'c1')</b></div><div><div style="font-weight: bold;">6) select&nbsp; p1.nom from produit p1 where p1.prix &lt; (select AVG (p2.prix) from produit p2 )</div><div><b>7) delete&nbsp; from vente&nbsp; where date &lt; '01-mars-2022' and IdCli&nbsp; in ( select c.IdCli from client c where&nbsp; c.ville= 'fes')</b></div><div style="font-weight: bold;"><br /></div></div><div><b><br /></b></div></span></span></span></div><p><b><span style="color: #0b5394;"><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><br /></td></tr></tbody></table><span style="font-size: large;"><br /></span></span></b></p><p><b style="color: #073763; font-size: x-large;"><br /></b></p><p style="-webkit-text-stroke-width: 0px; font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant-caps: normal; font-variant-ligatures: normal; letter-spacing: normal; orphans: 2; text-align: left; text-decoration-color: initial; text-decoration-style: initial; text-decoration-thickness: initial; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px;"><span><span><span><!--/data/user/0/com.samsung.android.app.notes/files/clipdata/clipdata_220811_093302_615.sdoc--></span></span></span></p><p></p><p></p>
+</div>
+<script type='text/javascript'>
+var  obj0=document.getElementById("aim17801641658240523640");
+var  obj1=document.getElementById("aim27801641658240523640");
+var  s=obj1.innerHTML;
+var r=s.search(/\x3C!-- adsense --\x3E/igm);
+if(r>0)  {obj0.innerHTML=s.substr(0,r);obj1.innerHTML=s.substr(r+16);}
+</script>
+<script async='async' src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+<ins class='adsbygoogle' data-ad-client='ca-pub-4042780438239805' data-ad-slot='8260718846' style='display:inline-block;width:336px;height:280px'></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<!-- Sidebar Wrapper -->
+<div id='sidebar-wrapper'>
+<div class='sidebar common-widget section' id='sidebar1' name='Sidebar Right (A)'><div class='widget HTML' data-version='2' id='HTML1'>
+
+</div></div>
+<div class='sidebar section' id='social-widget' name='Social Widget'><div class='widget LinkList' data-version='2' id='LinkList75'>
+</div></div>
+<div class='sidebar common-widget section' id='sidebar2' name='Sidebar Right (B)'>
+<div class='widget Label' data-version='2' id='Label3'>
+<div class='widget-content list-label'>
+<ul>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+<div class='clearfix'></div>
+<!-- Footer Wrapper -->
+<div id='footer-wrapper'>
+<div class='container row'>
+<div class='footer-widgets-wrap'>
+<div class='footer common-widget no-items section' id='footer-sec1' name='Section (Left)'>
+</div>
+<div class='footer common-widget no-items section' id='footer-sec2' name='Section (Center)'>
+</div>
+<div class='footer common-widget no-items section' id='footer-sec3' name='Section (Right)'>
+</div>
+</div>
+</div>
+<div class='clearfix'></div>
+<div id='sub-footer-wrapper'>
+<div class='container row'>
+<div class='menu-footer section' id='menu-footer' name='Menu Footer'><div class='widget LinkList' data-version='2' id='LinkList76'>
+<div class='widget-content'>
+<ul>
+<li><a href='principale.html'>Home</a></li>
+<li><a href='/contact.html'>Contact Us</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Scripts -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' type='text/javascript'></script>
+<script type='text/javascript'>
+//<![CDATA[   
+/*! Owl carousel by Bartosz Wojciechowski/David Deutsch | v2.0.0 - http://owlcarousel2.github.io/OwlCarousel2 */
+!function(a,b,c,d){function e(b,c){this.settings=null,this.options=a.extend({},e.Defaults,c),this.$element=a(b),this.drag=a.extend({},m),this.state=a.extend({},n),this.e=a.extend({},o),this._plugins={},this._supress={},this._current=null,this._speed=null,this._coordinates=[],this._breakpoint=null,this._width=null,this._items=[],this._clones=[],this._mergers=[],this._invalidated={},this._pipe=[],a.each(e.Plugins,a.proxy(function(a,b){this._plugins[a[0].toLowerCase()+a.slice(1)]=new b(this)},this)),a.each(e.Pipe,a.proxy(function(b,c){this._pipe.push({filter:c.filter,run:a.proxy(c.run,this)})},this)),this.setup(),this.initialize()}function f(a){if(a.touches!==d)return{x:a.touches[0].pageX,y:a.touches[0].pageY};if(a.touches===d){if(a.pageX!==d)return{x:a.pageX,y:a.pageY};if(a.pageX===d)return{x:a.clientX,y:a.clientY}}}function g(a){var b,d,e=c.createElement("div"),f=a;for(b in f)if(d=f[b],"undefined"!=typeof e.style[d])return e=null,[d,b];return[!1]}function h(){return g(["transition","WebkitTransition","MozTransition","OTransition"])[1]}function i(){return g(["transform","WebkitTransform","MozTransform","OTransform","msTransform"])[0]}function j(){return g(["perspective","webkitPerspective","MozPerspective","OPerspective","MsPerspective"])[0]}function k(){return"ontouchstart"in b||!!navigator.msMaxTouchPoints}function l(){return b.navigator.msPointerEnabled}var m,n,o;m={start:0,startX:0,startY:0,current:0,currentX:0,currentY:0,offsetX:0,offsetY:0,distance:null,startTime:0,endTime:0,updatedX:0,targetEl:null},n={isTouch:!1,isScrolling:!1,isSwiping:!1,direction:!1,inMotion:!1},o={_onDragStart:null,_onDragMove:null,_onDragEnd:null,_transitionEnd:null,_resizer:null,_responsiveCall:null,_goToLoop:null,_checkVisibile:null},e.Defaults={items:3,loop:!1,center:!1,mouseDrag:!0,touchDrag:!0,pullDrag:!0,freeDrag:!1,margin:0,stagePadding:0,merge:!1,mergeFit:!0,autoWidth:!1,startPosition:0,rtl:!1,smartSpeed:250,fluidSpeed:!1,dragEndSpeed:!1,responsive:{},responsiveRefreshRate:200,responsiveBaseElement:b,responsiveClass:!1,fallbackEasing:"swing",info:!1,nestedItemSelector:!1,itemElement:"div",stageElement:"div",themeClass:"owl-theme",baseClass:"owl-carousel",itemClass:"owl-item",centerClass:"center",activeClass:"active"},e.Width={Default:"default",Inner:"inner",Outer:"outer"},e.Plugins={},e.Pipe=[{filter:["width","items","settings"],run:function(a){a.current=this._items&&this._items[this.relative(this._current)]}},{filter:["items","settings"],run:function(){var a=this._clones,b=this.$stage.children(".cloned");(b.length!==a.length||!this.settings.loop&&a.length>0)&&(this.$stage.children(".cloned").remove(),this._clones=[])}},{filter:["items","settings"],run:function(){var a,b,c=this._clones,d=this._items,e=this.settings.loop?c.length-Math.max(2*this.settings.items,4):0;for(a=0,b=Math.abs(e/2);b>a;a++)e>0?(this.$stage.children().eq(d.length+c.length-1).remove(),c.pop(),this.$stage.children().eq(0).remove(),c.pop()):(c.push(c.length/2),this.$stage.append(d[c[c.length-1]].clone().addClass("cloned")),c.push(d.length-1-(c.length-1)/2),this.$stage.prepend(d[c[c.length-1]].clone().addClass("cloned")))}},{filter:["width","items","settings"],run:function(){var a,b,c,d=this.settings.rtl?1:-1,e=(this.width()/this.settings.items).toFixed(3),f=0;for(this._coordinates=[],b=0,c=this._clones.length+this._items.length;c>b;b++)a=this._mergers[this.relative(b)],a=this.settings.mergeFit&&Math.min(a,this.settings.items)||a,f+=(this.settings.autoWidth?this._items[this.relative(b)].width()+this.settings.margin:e*a)*d,this._coordinates.push(f)}},{filter:["width","items","settings"],run:function(){var b,c,d=(this.width()/this.settings.items).toFixed(3),e={width:Math.abs(this._coordinates[this._coordinates.length-1])+2*this.settings.stagePadding,"padding-left":this.settings.stagePadding||"","padding-right":this.settings.stagePadding||""};if(this.$stage.css(e),e={width:this.settings.autoWidth?"auto":d-this.settings.margin},e[this.settings.rtl?"margin-left":"margin-right"]=this.settings.margin,!this.settings.autoWidth&&a.grep(this._mergers,function(a){return a>1}).length>0)for(b=0,c=this._coordinates.length;c>b;b++)e.width=Math.abs(this._coordinates[b])-Math.abs(this._coordinates[b-1]||0)-this.settings.margin,this.$stage.children().eq(b).css(e);else this.$stage.children().css(e)}},{filter:["width","items","settings"],run:function(a){a.current&&this.reset(this.$stage.children().index(a.current))}},{filter:["position"],run:function(){this.animate(this.coordinates(this._current))}},{filter:["width","position","items","settings"],run:function(){var a,b,c,d,e=this.settings.rtl?1:-1,f=2*this.settings.stagePadding,g=this.coordinates(this.current())+f,h=g+this.width()*e,i=[];for(c=0,d=this._coordinates.length;d>c;c++)a=this._coordinates[c-1]||0,b=Math.abs(this._coordinates[c])+f*e,(this.op(a,"<=",g)&&this.op(a,">",h)||this.op(b,"<",g)&&this.op(b,">",h))&&i.push(c);this.$stage.children("."+this.settings.activeClass).removeClass(this.settings.activeClass),this.$stage.children(":eq("+i.join("), :eq(")+")").addClass(this.settings.activeClass),this.settings.center&&(this.$stage.children("."+this.settings.centerClass).removeClass(this.settings.centerClass),this.$stage.children().eq(this.current()).addClass(this.settings.centerClass))}}],e.prototype.initialize=function(){if(this.trigger("initialize"),this.$element.addClass(this.settings.baseClass).addClass(this.settings.themeClass).toggleClass("owl-rtl",this.settings.rtl),this.browserSupport(),this.settings.autoWidth&&this.state.imagesLoaded!==!0){var b,c,e;if(b=this.$element.find("img"),c=this.settings.nestedItemSelector?"."+this.settings.nestedItemSelector:d,e=this.$element.children(c).width(),b.length&&0>=e)return this.preloadAutoWidthImages(b),!1}this.$element.addClass("owl-loading"),this.$stage=a("<"+this.settings.stageElement+' class="owl-stage"/>').wrap('<div class="owl-stage-outer">'),this.$element.append(this.$stage.parent()),this.replace(this.$element.children().not(this.$stage.parent())),this._width=this.$element.width(),this.refresh(),this.$element.removeClass("owl-loading").addClass("owl-loaded"),this.eventsCall(),this.internalEvents(),this.addTriggerableEvents(),this.trigger("initialized")},e.prototype.setup=function(){var b=this.viewport(),c=this.options.responsive,d=-1,e=null;c?(a.each(c,function(a){b>=a&&a>d&&(d=Number(a))}),e=a.extend({},this.options,c[d]),delete e.responsive,e.responsiveClass&&this.$element.attr("class",function(a,b){return b.replace(/\b owl-responsive-\S+/g,"")}).addClass("owl-responsive-"+d)):e=a.extend({},this.options),(null===this.settings||this._breakpoint!==d)&&(this.trigger("change",{property:{name:"settings",value:e}}),this._breakpoint=d,this.settings=e,this.invalidate("settings"),this.trigger("changed",{property:{name:"settings",value:this.settings}}))},e.prototype.optionsLogic=function(){this.$element.toggleClass("owl-center",this.settings.center),this.settings.loop&&this._items.length<this.settings.items&&(this.settings.loop=!1),this.settings.autoWidth&&(this.settings.stagePadding=!1,this.settings.merge=!1)},e.prototype.prepare=function(b){var c=this.trigger("prepare",{content:b});return c.data||(c.data=a("<"+this.settings.itemElement+"/>").addClass(this.settings.itemClass).append(b)),this.trigger("prepared",{content:c.data}),c.data},e.prototype.update=function(){for(var b=0,c=this._pipe.length,d=a.proxy(function(a){return this[a]},this._invalidated),e={};c>b;)(this._invalidated.all||a.grep(this._pipe[b].filter,d).length>0)&&this._pipe[b].run(e),b++;this._invalidated={}},e.prototype.width=function(a){switch(a=a||e.Width.Default){case e.Width.Inner:case e.Width.Outer:return this._width;default:return this._width-2*this.settings.stagePadding+this.settings.margin}},e.prototype.refresh=function(){if(0===this._items.length)return!1;(new Date).getTime();this.trigger("refresh"),this.setup(),this.optionsLogic(),this.$stage.addClass("owl-refresh"),this.update(),this.$stage.removeClass("owl-refresh"),this.state.orientation=b.orientation,this.watchVisibility(),this.trigger("refreshed")},e.prototype.eventsCall=function(){this.e._onDragStart=a.proxy(function(a){this.onDragStart(a)},this),this.e._onDragMove=a.proxy(function(a){this.onDragMove(a)},this),this.e._onDragEnd=a.proxy(function(a){this.onDragEnd(a)},this),this.e._onResize=a.proxy(function(a){this.onResize(a)},this),this.e._transitionEnd=a.proxy(function(a){this.transitionEnd(a)},this),this.e._preventClick=a.proxy(function(a){this.preventClick(a)},this)},e.prototype.onThrottledResize=function(){b.clearTimeout(this.resizeTimer),this.resizeTimer=b.setTimeout(this.e._onResize,this.settings.responsiveRefreshRate)},e.prototype.onResize=function(){return this._items.length?this._width===this.$element.width()?!1:this.trigger("resize").isDefaultPrevented()?!1:(this._width=this.$element.width(),this.invalidate("width"),this.refresh(),void this.trigger("resized")):!1},e.prototype.eventsRouter=function(a){var b=a.type;"mousedown"===b||"touchstart"===b?this.onDragStart(a):"mousemove"===b||"touchmove"===b?this.onDragMove(a):"mouseup"===b||"touchend"===b?this.onDragEnd(a):"touchcancel"===b&&this.onDragEnd(a)},e.prototype.internalEvents=function(){var c=(k(),l());this.settings.mouseDrag?(this.$stage.on("mousedown",a.proxy(function(a){this.eventsRouter(a)},this)),this.$stage.on("dragstart",function(){return!1}),this.$stage.get(0).onselectstart=function(){return!1}):this.$element.addClass("owl-text-select-on"),this.settings.touchDrag&&!c&&this.$stage.on("touchstart touchcancel",a.proxy(function(a){this.eventsRouter(a)},this)),this.transitionEndVendor&&this.on(this.$stage.get(0),this.transitionEndVendor,this.e._transitionEnd,!1),this.settings.responsive!==!1&&this.on(b,"resize",a.proxy(this.onThrottledResize,this))},e.prototype.onDragStart=function(d){var e,g,h,i;if(e=d.originalEvent||d||b.event,3===e.which||this.state.isTouch)return!1;if("mousedown"===e.type&&this.$stage.addClass("owl-grab"),this.trigger("drag"),this.drag.startTime=(new Date).getTime(),this.speed(0),this.state.isTouch=!0,this.state.isScrolling=!1,this.state.isSwiping=!1,this.drag.distance=0,g=f(e).x,h=f(e).y,this.drag.offsetX=this.$stage.position().left,this.drag.offsetY=this.$stage.position().top,this.settings.rtl&&(this.drag.offsetX=this.$stage.position().left+this.$stage.width()-this.width()+this.settings.margin),this.state.inMotion&&this.support3d)i=this.getTransformProperty(),this.drag.offsetX=i,this.animate(i),this.state.inMotion=!0;else if(this.state.inMotion&&!this.support3d)return this.state.inMotion=!1,!1;this.drag.startX=g-this.drag.offsetX,this.drag.startY=h-this.drag.offsetY,this.drag.start=g-this.drag.startX,this.drag.targetEl=e.target||e.srcElement,this.drag.updatedX=this.drag.start,("IMG"===this.drag.targetEl.tagName||"A"===this.drag.targetEl.tagName)&&(this.drag.targetEl.draggable=!1),a(c).on("mousemove.owl.dragEvents mouseup.owl.dragEvents touchmove.owl.dragEvents touchend.owl.dragEvents",a.proxy(function(a){this.eventsRouter(a)},this))},e.prototype.onDragMove=function(a){var c,e,g,h,i,j;this.state.isTouch&&(this.state.isScrolling||(c=a.originalEvent||a||b.event,e=f(c).x,g=f(c).y,this.drag.currentX=e-this.drag.startX,this.drag.currentY=g-this.drag.startY,this.drag.distance=this.drag.currentX-this.drag.offsetX,this.drag.distance<0?this.state.direction=this.settings.rtl?"right":"left":this.drag.distance>0&&(this.state.direction=this.settings.rtl?"left":"right"),this.settings.loop?this.op(this.drag.currentX,">",this.coordinates(this.minimum()))&&"right"===this.state.direction?this.drag.currentX-=(this.settings.center&&this.coordinates(0))-this.coordinates(this._items.length):this.op(this.drag.currentX,"<",this.coordinates(this.maximum()))&&"left"===this.state.direction&&(this.drag.currentX+=(this.settings.center&&this.coordinates(0))-this.coordinates(this._items.length)):(h=this.coordinates(this.settings.rtl?this.maximum():this.minimum()),i=this.coordinates(this.settings.rtl?this.minimum():this.maximum()),j=this.settings.pullDrag?this.drag.distance/5:0,this.drag.currentX=Math.max(Math.min(this.drag.currentX,h+j),i+j)),(this.drag.distance>8||this.drag.distance<-8)&&(c.preventDefault!==d?c.preventDefault():c.returnValue=!1,this.state.isSwiping=!0),this.drag.updatedX=this.drag.currentX,(this.drag.currentY>16||this.drag.currentY<-16)&&this.state.isSwiping===!1&&(this.state.isScrolling=!0,this.drag.updatedX=this.drag.start),this.animate(this.drag.updatedX)))},e.prototype.onDragEnd=function(b){var d,e,f;if(this.state.isTouch){if("mouseup"===b.type&&this.$stage.removeClass("owl-grab"),this.trigger("dragged"),this.drag.targetEl.removeAttribute("draggable"),this.state.isTouch=!1,this.state.isScrolling=!1,this.state.isSwiping=!1,0===this.drag.distance&&this.state.inMotion!==!0)return this.state.inMotion=!1,!1;this.drag.endTime=(new Date).getTime(),d=this.drag.endTime-this.drag.startTime,e=Math.abs(this.drag.distance),(e>3||d>300)&&this.removeClick(this.drag.targetEl),f=this.closest(this.drag.updatedX),this.speed(this.settings.dragEndSpeed||this.settings.smartSpeed),this.current(f),this.invalidate("position"),this.update(),this.settings.pullDrag||this.drag.updatedX!==this.coordinates(f)||this.transitionEnd(),this.drag.distance=0,a(c).off(".owl.dragEvents")}},e.prototype.removeClick=function(c){this.drag.targetEl=c,a(c).on("click.preventClick",this.e._preventClick),b.setTimeout(function(){a(c).off("click.preventClick")},300)},e.prototype.preventClick=function(b){b.preventDefault?b.preventDefault():b.returnValue=!1,b.stopPropagation&&b.stopPropagation(),a(b.target).off("click.preventClick")},e.prototype.getTransformProperty=function(){var a,c;return a=b.getComputedStyle(this.$stage.get(0),null).getPropertyValue(this.vendorName+"transform"),a=a.replace(/matrix(3d)?\(|\)/g,"").split(","),c=16===a.length,c!==!0?a[4]:a[12]},e.prototype.closest=function(b){var c=-1,d=30,e=this.width(),f=this.coordinates();return this.settings.freeDrag||a.each(f,a.proxy(function(a,g){return b>g-d&&g+d>b?c=a:this.op(b,"<",g)&&this.op(b,">",f[a+1]||g-e)&&(c="left"===this.state.direction?a+1:a),-1===c},this)),this.settings.loop||(this.op(b,">",f[this.minimum()])?c=b=this.minimum():this.op(b,"<",f[this.maximum()])&&(c=b=this.maximum())),c},e.prototype.animate=function(b){this.trigger("translate"),this.state.inMotion=this.speed()>0,this.support3d?this.$stage.css({transform:"translate3d("+b+"px,0px, 0px)",transition:this.speed()/1e3+"s"}):this.state.isTouch?this.$stage.css({left:b+"px"}):this.$stage.animate({left:b},this.speed()/1e3,this.settings.fallbackEasing,a.proxy(function(){this.state.inMotion&&this.transitionEnd()},this))},e.prototype.current=function(a){if(a===d)return this._current;if(0===this._items.length)return d;if(a=this.normalize(a),this._current!==a){var b=this.trigger("change",{property:{name:"position",value:a}});b.data!==d&&(a=this.normalize(b.data)),this._current=a,this.invalidate("position"),this.trigger("changed",{property:{name:"position",value:this._current}})}return this._current},e.prototype.invalidate=function(a){this._invalidated[a]=!0},e.prototype.reset=function(a){a=this.normalize(a),a!==d&&(this._speed=0,this._current=a,this.suppress(["translate","translated"]),this.animate(this.coordinates(a)),this.release(["translate","translated"]))},e.prototype.normalize=function(b,c){var e=c?this._items.length:this._items.length+this._clones.length;return!a.isNumeric(b)||1>e?d:b=this._clones.length?(b%e+e)%e:Math.max(this.minimum(c),Math.min(this.maximum(c),b))},e.prototype.relative=function(a){return a=this.normalize(a),a-=this._clones.length/2,this.normalize(a,!0)},e.prototype.maximum=function(a){var b,c,d,e=0,f=this.settings;if(a)return this._items.length-1;if(!f.loop&&f.center)b=this._items.length-1;else if(f.loop||f.center)if(f.loop||f.center)b=this._items.length+f.items;else{if(!f.autoWidth&&!f.merge)throw"Can not detect maximum absolute position.";for(revert=f.rtl?1:-1,c=this.$stage.width()-this.$element.width();(d=this.coordinates(e))&&!(d*revert>=c);)b=++e}else b=this._items.length-f.items;return b},e.prototype.minimum=function(a){return a?0:this._clones.length/2},e.prototype.items=function(a){return a===d?this._items.slice():(a=this.normalize(a,!0),this._items[a])},e.prototype.mergers=function(a){return a===d?this._mergers.slice():(a=this.normalize(a,!0),this._mergers[a])},e.prototype.clones=function(b){var c=this._clones.length/2,e=c+this._items.length,f=function(a){return a%2===0?e+a/2:c-(a+1)/2};return b===d?a.map(this._clones,function(a,b){return f(b)}):a.map(this._clones,function(a,c){return a===b?f(c):null})},e.prototype.speed=function(a){return a!==d&&(this._speed=a),this._speed},e.prototype.coordinates=function(b){var c=null;return b===d?a.map(this._coordinates,a.proxy(function(a,b){return this.coordinates(b)},this)):(this.settings.center?(c=this._coordinates[b],c+=(this.width()-c+(this._coordinates[b-1]||0))/2*(this.settings.rtl?-1:1)):c=this._coordinates[b-1]||0,c)},e.prototype.duration=function(a,b,c){return Math.min(Math.max(Math.abs(b-a),1),6)*Math.abs(c||this.settings.smartSpeed)},e.prototype.to=function(c,d){if(this.settings.loop){var e=c-this.relative(this.current()),f=this.current(),g=this.current(),h=this.current()+e,i=0>g-h?!0:!1,j=this._clones.length+this._items.length;h<this.settings.items&&i===!1?(f=g+this._items.length,this.reset(f)):h>=j-this.settings.items&&i===!0&&(f=g-this._items.length,this.reset(f)),b.clearTimeout(this.e._goToLoop),this.e._goToLoop=b.setTimeout(a.proxy(function(){this.speed(this.duration(this.current(),f+e,d)),this.current(f+e),this.update()},this),30)}else this.speed(this.duration(this.current(),c,d)),this.current(c),this.update()},e.prototype.next=function(a){a=a||!1,this.to(this.relative(this.current())+1,a)},e.prototype.prev=function(a){a=a||!1,this.to(this.relative(this.current())-1,a)},e.prototype.transitionEnd=function(a){return a!==d&&(a.stopPropagation(),(a.target||a.srcElement||a.originalTarget)!==this.$stage.get(0))?!1:(this.state.inMotion=!1,void this.trigger("translated"))},e.prototype.viewport=function(){var d;if(this.options.responsiveBaseElement!==b)d=a(this.options.responsiveBaseElement).width();else if(b.innerWidth)d=b.innerWidth;else{if(!c.documentElement||!c.documentElement.clientWidth)throw"Can not detect viewport width.";d=c.documentElement.clientWidth}return d},e.prototype.replace=function(b){this.$stage.empty(),this._items=[],b&&(b=b instanceof jQuery?b:a(b)),this.settings.nestedItemSelector&&(b=b.find("."+this.settings.nestedItemSelector)),b.filter(function(){return 1===this.nodeType}).each(a.proxy(function(a,b){b=this.prepare(b),this.$stage.append(b),this._items.push(b),this._mergers.push(1*b.find("[data-merge]").andSelf("[data-merge]").attr("data-merge")||1)},this)),this.reset(a.isNumeric(this.settings.startPosition)?this.settings.startPosition:0),this.invalidate("items")},e.prototype.add=function(a,b){b=b===d?this._items.length:this.normalize(b,!0),this.trigger("add",{content:a,position:b}),0===this._items.length||b===this._items.length?(this.$stage.append(a),this._items.push(a),this._mergers.push(1*a.find("[data-merge]").andSelf("[data-merge]").attr("data-merge")||1)):(this._items[b].before(a),this._items.splice(b,0,a),this._mergers.splice(b,0,1*a.find("[data-merge]").andSelf("[data-merge]").attr("data-merge")||1)),this.invalidate("items"),this.trigger("added",{content:a,position:b})},e.prototype.remove=function(a){a=this.normalize(a,!0),a!==d&&(this.trigger("remove",{content:this._items[a],position:a}),this._items[a].remove(),this._items.splice(a,1),this._mergers.splice(a,1),this.invalidate("items"),this.trigger("removed",{content:null,position:a}))},e.prototype.addTriggerableEvents=function(){var b=a.proxy(function(b,c){return a.proxy(function(a){a.relatedTarget!==this&&(this.suppress([c]),b.apply(this,[].slice.call(arguments,1)),this.release([c]))},this)},this);a.each({next:this.next,prev:this.prev,to:this.to,destroy:this.destroy,refresh:this.refresh,replace:this.replace,add:this.add,remove:this.remove},a.proxy(function(a,c){this.$element.on(a+".owl.carousel",b(c,a+".owl.carousel"))},this))},e.prototype.watchVisibility=function(){function c(a){return a.offsetWidth>0&&a.offsetHeight>0}function d(){c(this.$element.get(0))&&(this.$element.removeClass("owl-hidden"),this.refresh(),b.clearInterval(this.e._checkVisibile))}c(this.$element.get(0))||(this.$element.addClass("owl-hidden"),b.clearInterval(this.e._checkVisibile),this.e._checkVisibile=b.setInterval(a.proxy(d,this),500))},e.prototype.preloadAutoWidthImages=function(b){var c,d,e,f;c=0,d=this,b.each(function(g,h){e=a(h),f=new Image,f.onload=function(){c++,e.attr("src",f.src),e.css("opacity",1),c>=b.length&&(d.state.imagesLoaded=!0,d.initialize())},f.src=e.attr("src")||e.attr("data-src")||e.attr("data-src-retina")})},e.prototype.destroy=function(){this.$element.hasClass(this.settings.themeClass)&&this.$element.removeClass(this.settings.themeClass),this.settings.responsive!==!1&&a(b).off("resize.owl.carousel"),this.transitionEndVendor&&this.off(this.$stage.get(0),this.transitionEndVendor,this.e._transitionEnd);for(var d in this._plugins)this._plugins[d].destroy();(this.settings.mouseDrag||this.settings.touchDrag)&&(this.$stage.off("mousedown touchstart touchcancel"),a(c).off(".owl.dragEvents"),this.$stage.get(0).onselectstart=function(){},this.$stage.off("dragstart",function(){return!1})),this.$element.off(".owl"),this.$stage.children(".cloned").remove(),this.e=null,this.$element.removeData("owlCarousel"),this.$stage.children().contents().unwrap(),this.$stage.children().unwrap(),this.$stage.unwrap()},e.prototype.op=function(a,b,c){var d=this.settings.rtl;switch(b){case"<":return d?a>c:c>a;case">":return d?c>a:a>c;case">=":return d?c>=a:a>=c;case"<=":return d?a>=c:c>=a}},e.prototype.on=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,d):a.attachEvent&&a.attachEvent("on"+b,c)},e.prototype.off=function(a,b,c,d){a.removeEventListener?a.removeEventListener(b,c,d):a.detachEvent&&a.detachEvent("on"+b,c)},e.prototype.trigger=function(b,c,d){var e={item:{count:this._items.length,index:this.current()}},f=a.camelCase(a.grep(["on",b,d],function(a){return a}).join("-").toLowerCase()),g=a.Event([b,"owl",d||"carousel"].join(".").toLowerCase(),a.extend({relatedTarget:this},e,c));return this._supress[b]||(a.each(this._plugins,function(a,b){b.onTrigger&&b.onTrigger(g)}),this.$element.trigger(g),this.settings&&"function"==typeof this.settings[f]&&this.settings[f].apply(this,g)),g},e.prototype.suppress=function(b){a.each(b,a.proxy(function(a,b){this._supress[b]=!0},this))},e.prototype.release=function(b){a.each(b,a.proxy(function(a,b){delete this._supress[b]},this))},e.prototype.browserSupport=function(){if(this.support3d=j(),this.support3d){this.transformVendor=i();var a=["transitionend","webkitTransitionEnd","transitionend","oTransitionEnd"];this.transitionEndVendor=a[h()],this.vendorName=this.transformVendor.replace(/Transform/i,""),this.vendorName=""!==this.vendorName?"-"+this.vendorName.toLowerCase()+"-":""}this.state.orientation=b.orientation},a.fn.owlCarousel=function(b){return this.each(function(){a(this).data("owlCarousel")||a(this).data("owlCarousel",new e(this,b))})},a.fn.owlCarousel.Constructor=e}(window.Zepto||window.jQuery,window,document),function(a,b){var c=function(b){this._core=b,this._loaded=[],this._handlers={"initialized.owl.carousel change.owl.carousel":a.proxy(function(b){if(b.namespace&&this._core.settings&&this._core.settings.lazyLoad&&(b.property&&"position"==b.property.name||"initialized"==b.type))for(var c=this._core.settings,d=c.center&&Math.ceil(c.items/2)||c.items,e=c.center&&-1*d||0,f=(b.property&&b.property.value||this._core.current())+e,g=this._core.clones().length,h=a.proxy(function(a,b){this.load(b)},this);e++<d;)this.load(g/2+this._core.relative(f)),g&&a.each(this._core.clones(this._core.relative(f++)),h)},this)},this._core.options=a.extend({},c.Defaults,this._core.options),this._core.$element.on(this._handlers)};c.Defaults={lazyLoad:!1},c.prototype.load=function(c){var d=this._core.$stage.children().eq(c),e=d&&d.find(".owl-lazy");!e||a.inArray(d.get(0),this._loaded)>-1||(e.each(a.proxy(function(c,d){var e,f=a(d),g=b.devicePixelRatio>1&&f.attr("data-src-retina")||f.attr("data-src");this._core.trigger("load",{element:f,url:g},"lazy"),f.is("img")?f.one("load.owl.lazy",a.proxy(function(){f.css("opacity",1),this._core.trigger("loaded",{element:f,url:g},"lazy")},this)).attr("src",g):(e=new Image,e.onload=a.proxy(function(){f.css({"background-image":"url("+g+")",opacity:"1"}),this._core.trigger("loaded",{element:f,url:g},"lazy")},this),e.src=g)},this)),this._loaded.push(d.get(0)))},c.prototype.destroy=function(){var a,b;for(a in this.handlers)this._core.$element.off(a,this.handlers[a]);for(b in Object.getOwnPropertyNames(this))"function"!=typeof this[b]&&(this[b]=null)},a.fn.owlCarousel.Constructor.Plugins.Lazy=c}(window.Zepto||window.jQuery,window,document),function(a){var b=function(c){this._core=c,this._handlers={"initialized.owl.carousel":a.proxy(function(){this._core.settings.autoHeight&&this.update()},this),"changed.owl.carousel":a.proxy(function(a){this._core.settings.autoHeight&&"position"==a.property.name&&this.update()},this),"loaded.owl.lazy":a.proxy(function(a){this._core.settings.autoHeight&&a.element.closest("."+this._core.settings.itemClass)===this._core.$stage.children().eq(this._core.current())&&this.update()},this)},this._core.options=a.extend({},b.Defaults,this._core.options),this._core.$element.on(this._handlers)};b.Defaults={autoHeight:!1,autoHeightClass:"owl-height"},b.prototype.update=function(){this._core.$stage.parent().height(this._core.$stage.children().eq(this._core.current()).height()).addClass(this._core.settings.autoHeightClass)},b.prototype.destroy=function(){var a,b;for(a in this._handlers)this._core.$element.off(a,this._handlers[a]);for(b in Object.getOwnPropertyNames(this))"function"!=typeof this[b]&&(this[b]=null)},a.fn.owlCarousel.Constructor.Plugins.AutoHeight=b}(window.Zepto||window.jQuery,window,document),function(a,b,c){var d=function(b){this._core=b,this._videos={},this._playing=null,this._fullscreen=!1,this._handlers={"resize.owl.carousel":a.proxy(function(a){this._core.settings.video&&!this.isInFullScreen()&&a.preventDefault()},this),"refresh.owl.carousel changed.owl.carousel":a.proxy(function(){this._playing&&this.stop()},this),"prepared.owl.carousel":a.proxy(function(b){var c=a(b.content).find(".owl-video");c.length&&(c.css("display","none"),this.fetch(c,a(b.content)))},this)},this._core.options=a.extend({},d.Defaults,this._core.options),this._core.$element.on(this._handlers),this._core.$element.on("click.owl.video",".owl-video-play-icon",a.proxy(function(a){this.play(a)},this))};d.Defaults={video:!1,videoHeight:!1,videoWidth:!1},d.prototype.fetch=function(a,b){var c=a.attr("data-vimeo-id")?"vimeo":"youtube",d=a.attr("data-vimeo-id")||a.attr("data-youtube-id"),e=a.attr("data-width")||this._core.settings.videoWidth,f=a.attr("data-height")||this._core.settings.videoHeight,g=a.attr("href");if(!g)throw new Error("Missing video URL.");if(d=g.match(/(http:|https:|)\/\/(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/),d[3].indexOf("youtu")>-1)c="youtube";else{if(!(d[3].indexOf("vimeo")>-1))throw new Error("Video URL not supported.");c="vimeo"}d=d[6],this._videos[g]={type:c,id:d,width:e,height:f},b.attr("data-video",g),this.thumbnail(a,this._videos[g])},d.prototype.thumbnail=function(b,c){var d,e,f,g=c.width&&c.height?'style="width:'+c.width+"px;height:"+c.height+'px;"':"",h=b.find("img"),i="src",j="",k=this._core.settings,l=function(a){e='<div class="owl-video-play-icon"></div>',d=k.lazyLoad?'<div class="owl-video-tn '+j+'" '+i+'="'+a+'"></div>':'<div class="owl-video-tn" style="opacity:1;background-image:url('+a+')"></div>',b.after(d),b.after(e)};return b.wrap('<div class="owl-video-wrapper"'+g+"></div>"),this._core.settings.lazyLoad&&(i="data-src",j="owl-lazy"),h.length?(l(h.attr(i)),h.remove(),!1):void("youtube"===c.type?(f="http://img.youtube.com/vi/"+c.id+"/hqdefault.jpg",l(f)):"vimeo"===c.type&&a.ajax({type:"GET",url:"http://vimeo.com/api/v2/video/"+c.id+".json",jsonp:"callback",dataType:"jsonp",success:function(a){f=a[0].thumbnail_large,l(f)}}))},d.prototype.stop=function(){this._core.trigger("stop",null,"video"),this._playing.find(".owl-video-frame").remove(),this._playing.removeClass("owl-video-playing"),this._playing=null},d.prototype.play=function(b){this._core.trigger("play",null,"video"),this._playing&&this.stop();var c,d,e=a(b.target||b.srcElement),f=e.closest("."+this._core.settings.itemClass),g=this._videos[f.attr("data-video")],h=g.width||"100%",i=g.height||this._core.$stage.height();"youtube"===g.type?c='<iframe width="'+h+'" height="'+i+'" src="http://www.youtube.com/embed/'+g.id+"?autoplay=1&v="+g.id+'" frameborder="0" allowfullscreen></iframe>':"vimeo"===g.type&&(c='<iframe src="http://player.vimeo.com/video/'+g.id+'?autoplay=1" width="'+h+'" height="'+i+'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'),f.addClass("owl-video-playing"),this._playing=f,d=a('<div style="height:'+i+"px; width:"+h+'px" class="owl-video-frame">'+c+"</div>"),e.after(d)},d.prototype.isInFullScreen=function(){var d=c.fullscreenElement||c.mozFullScreenElement||c.webkitFullscreenElement;return d&&a(d).parent().hasClass("owl-video-frame")&&(this._core.speed(0),this._fullscreen=!0),d&&this._fullscreen&&this._playing?!1:this._fullscreen?(this._fullscreen=!1,!1):this._playing&&this._core.state.orientation!==b.orientation?(this._core.state.orientation=b.orientation,!1):!0},d.prototype.destroy=function(){var a,b;this._core.$element.off("click.owl.video");for(a in this._handlers)this._core.$element.off(a,this._handlers[a]);for(b in Object.getOwnPropertyNames(this))"function"!=typeof this[b]&&(this[b]=null)},a.fn.owlCarousel.Constructor.Plugins.Video=d}(window.Zepto||window.jQuery,window,document),function(a,b,c,d){var e=function(b){this.core=b,this.core.options=a.extend({},e.Defaults,this.core.options),this.swapping=!0,this.previous=d,this.next=d,this.handlers={"change.owl.carousel":a.proxy(function(a){"position"==a.property.name&&(this.previous=this.core.current(),this.next=a.property.value)},this),"drag.owl.carousel dragged.owl.carousel translated.owl.carousel":a.proxy(function(a){this.swapping="translated"==a.type},this),"translate.owl.carousel":a.proxy(function(){this.swapping&&(this.core.options.animateOut||this.core.options.animateIn)&&this.swap()},this)},this.core.$element.on(this.handlers)};e.Defaults={animateOut:!1,animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&this.core.support3d){this.core.speed(0);var b,c=a.proxy(this.clear,this),d=this.core.$stage.children().eq(this.previous),e=this.core.$stage.children().eq(this.next),f=this.core.settings.animateIn,g=this.core.settings.animateOut;this.core.current()!==this.previous&&(g&&(b=this.core.coordinates(this.previous)-this.core.coordinates(this.next),d.css({left:b+"px"}).addClass("animated owl-animated-out").addClass(g).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",c)),f&&e.addClass("animated owl-animated-in").addClass(f).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",c))}},e.prototype.clear=function(b){a(b.target).css({left:""}).removeClass("animated owl-animated-out owl-animated-in").removeClass(this.core.settings.animateIn).removeClass(this.core.settings.animateOut),this.core.transitionEnd()},e.prototype.destroy=function(){var a,b;for(a in this.handlers)this.core.$element.off(a,this.handlers[a]);for(b in Object.getOwnPropertyNames(this))"function"!=typeof this[b]&&(this[b]=null)},a.fn.owlCarousel.Constructor.Plugins.Animate=e}(window.Zepto||window.jQuery,window,document),function(a,b,c){var d=function(b){this.core=b,this.core.options=a.extend({},d.Defaults,this.core.options),this.handlers={"translated.owl.carousel refreshed.owl.carousel":a.proxy(function(){this.autoplay()
+},this),"play.owl.autoplay":a.proxy(function(a,b,c){this.play(b,c)},this),"stop.owl.autoplay":a.proxy(function(){this.stop()},this),"mouseover.owl.autoplay":a.proxy(function(){this.core.settings.autoplayHoverPause&&this.pause()},this),"mouseleave.owl.autoplay":a.proxy(function(){this.core.settings.autoplayHoverPause&&this.autoplay()},this)},this.core.$element.on(this.handlers)};d.Defaults={autoplay:!1,autoplayTimeout:5e3,autoplayHoverPause:!1,autoplaySpeed:!1},d.prototype.autoplay=function(){this.core.settings.autoplay&&!this.core.state.videoPlay?(b.clearInterval(this.interval),this.interval=b.setInterval(a.proxy(function(){this.play()},this),this.core.settings.autoplayTimeout)):b.clearInterval(this.interval)},d.prototype.play=function(){return c.hidden===!0||this.core.state.isTouch||this.core.state.isScrolling||this.core.state.isSwiping||this.core.state.inMotion?void 0:this.core.settings.autoplay===!1?void b.clearInterval(this.interval):void this.core.next(this.core.settings.autoplaySpeed)},d.prototype.stop=function(){b.clearInterval(this.interval)},d.prototype.pause=function(){b.clearInterval(this.interval)},d.prototype.destroy=function(){var a,c;b.clearInterval(this.interval);for(a in this.handlers)this.core.$element.off(a,this.handlers[a]);for(c in Object.getOwnPropertyNames(this))"function"!=typeof this[c]&&(this[c]=null)},a.fn.owlCarousel.Constructor.Plugins.autoplay=d}(window.Zepto||window.jQuery,window,document),function(a){"use strict";var b=function(c){this._core=c,this._initialized=!1,this._pages=[],this._controls={},this._templates=[],this.$element=this._core.$element,this._overrides={next:this._core.next,prev:this._core.prev,to:this._core.to},this._handlers={"prepared.owl.carousel":a.proxy(function(b){this._core.settings.dotsData&&this._templates.push(a(b.content).find("[data-dot]").andSelf("[data-dot]").attr("data-dot"))},this),"add.owl.carousel":a.proxy(function(b){this._core.settings.dotsData&&this._templates.splice(b.position,0,a(b.content).find("[data-dot]").andSelf("[data-dot]").attr("data-dot"))},this),"remove.owl.carousel prepared.owl.carousel":a.proxy(function(a){this._core.settings.dotsData&&this._templates.splice(a.position,1)},this),"change.owl.carousel":a.proxy(function(a){if("position"==a.property.name&&!this._core.state.revert&&!this._core.settings.loop&&this._core.settings.navRewind){var b=this._core.current(),c=this._core.maximum(),d=this._core.minimum();a.data=a.property.value>c?b>=c?d:c:a.property.value<d?c:a.property.value}},this),"changed.owl.carousel":a.proxy(function(a){"position"==a.property.name&&this.draw()},this),"refreshed.owl.carousel":a.proxy(function(){this._initialized||(this.initialize(),this._initialized=!0),this._core.trigger("refresh",null,"navigation"),this.update(),this.draw(),this._core.trigger("refreshed",null,"navigation")},this)},this._core.options=a.extend({},b.Defaults,this._core.options),this.$element.on(this._handlers)};b.Defaults={nav:!1,navRewind:!0,navText:["prev","next"],navSpeed:!1,navElement:"div",navContainer:!1,navContainerClass:"owl-nav",navClass:["owl-prev","owl-next"],slideBy:1,dotClass:"owl-dot",dotsClass:"owl-dots",dots:!0,dotsEach:!1,dotData:!1,dotsSpeed:!1,dotsContainer:!1,controlsClass:"owl-controls"},b.prototype.initialize=function(){var b,c,d=this._core.settings;d.dotsData||(this._templates=[a("<div>").addClass(d.dotClass).append(a("<span>")).prop("outerHTML")]),d.navContainer&&d.dotsContainer||(this._controls.$container=a("<div>").addClass(d.controlsClass).appendTo(this.$element)),this._controls.$indicators=d.dotsContainer?a(d.dotsContainer):a("<div>").hide().addClass(d.dotsClass).appendTo(this._controls.$container),this._controls.$indicators.on("click","div",a.proxy(function(b){var c=a(b.target).parent().is(this._controls.$indicators)?a(b.target).index():a(b.target).parent().index();b.preventDefault(),this.to(c,d.dotsSpeed)},this)),b=d.navContainer?a(d.navContainer):a("<div>").addClass(d.navContainerClass).prependTo(this._controls.$container),this._controls.$next=a("<"+d.navElement+">"),this._controls.$previous=this._controls.$next.clone(),this._controls.$previous.addClass(d.navClass[0]).html(d.navText[0]).hide().prependTo(b).on("click",a.proxy(function(){this.prev(d.navSpeed)},this)),this._controls.$next.addClass(d.navClass[1]).html(d.navText[1]).hide().appendTo(b).on("click",a.proxy(function(){this.next(d.navSpeed)},this));for(c in this._overrides)this._core[c]=a.proxy(this[c],this)},b.prototype.destroy=function(){var a,b,c,d;for(a in this._handlers)this.$element.off(a,this._handlers[a]);for(b in this._controls)this._controls[b].remove();for(d in this.overides)this._core[d]=this._overrides[d];for(c in Object.getOwnPropertyNames(this))"function"!=typeof this[c]&&(this[c]=null)},b.prototype.update=function(){var a,b,c,d=this._core.settings,e=this._core.clones().length/2,f=e+this._core.items().length,g=d.center||d.autoWidth||d.dotData?1:d.dotsEach||d.items;if("page"!==d.slideBy&&(d.slideBy=Math.min(d.slideBy,d.items)),d.dots||"page"==d.slideBy)for(this._pages=[],a=e,b=0,c=0;f>a;a++)(b>=g||0===b)&&(this._pages.push({start:a-e,end:a-e+g-1}),b=0,++c),b+=this._core.mergers(this._core.relative(a))},b.prototype.draw=function(){var b,c,d="",e=this._core.settings,f=(this._core.$stage.children(),this._core.relative(this._core.current()));if(!e.nav||e.loop||e.navRewind||(this._controls.$previous.toggleClass("disabled",0>=f),this._controls.$next.toggleClass("disabled",f>=this._core.maximum())),this._controls.$previous.toggle(e.nav),this._controls.$next.toggle(e.nav),e.dots){if(b=this._pages.length-this._controls.$indicators.children().length,e.dotData&&0!==b){for(c=0;c<this._controls.$indicators.children().length;c++)d+=this._templates[this._core.relative(c)];this._controls.$indicators.html(d)}else b>0?(d=new Array(b+1).join(this._templates[0]),this._controls.$indicators.append(d)):0>b&&this._controls.$indicators.children().slice(b).remove();this._controls.$indicators.find(".active").removeClass("active"),this._controls.$indicators.children().eq(a.inArray(this.current(),this._pages)).addClass("active")}this._controls.$indicators.toggle(e.dots)},b.prototype.onTrigger=function(b){var c=this._core.settings;b.page={index:a.inArray(this.current(),this._pages),count:this._pages.length,size:c&&(c.center||c.autoWidth||c.dotData?1:c.dotsEach||c.items)}},b.prototype.current=function(){var b=this._core.relative(this._core.current());return a.grep(this._pages,function(a){return a.start<=b&&a.end>=b}).pop()},b.prototype.getPosition=function(b){var c,d,e=this._core.settings;return"page"==e.slideBy?(c=a.inArray(this.current(),this._pages),d=this._pages.length,b?++c:--c,c=this._pages[(c%d+d)%d].start):(c=this._core.relative(this._core.current()),d=this._core.items().length,b?c+=e.slideBy:c-=e.slideBy),c},b.prototype.next=function(b){a.proxy(this._overrides.to,this._core)(this.getPosition(!0),b)},b.prototype.prev=function(b){a.proxy(this._overrides.to,this._core)(this.getPosition(!1),b)},b.prototype.to=function(b,c,d){var e;d?a.proxy(this._overrides.to,this._core)(b,c):(e=this._pages.length,a.proxy(this._overrides.to,this._core)(this._pages[(b%e+e)%e].start,c))},a.fn.owlCarousel.Constructor.Plugins.Navigation=b}(window.Zepto||window.jQuery,window,document),function(a,b){"use strict";var c=function(d){this._core=d,this._hashes={},this.$element=this._core.$element,this._handlers={"initialized.owl.carousel":a.proxy(function(){"URLHash"==this._core.settings.startPosition&&a(b).trigger("hashchange.owl.navigation")},this),"prepared.owl.carousel":a.proxy(function(b){var c=a(b.content).find("[data-hash]").andSelf("[data-hash]").attr("data-hash");this._hashes[c]=b.content},this)},this._core.options=a.extend({},c.Defaults,this._core.options),this.$element.on(this._handlers),a(b).on("hashchange.owl.navigation",a.proxy(function(){var a=b.location.hash.substring(1),c=this._core.$stage.children(),d=this._hashes[a]&&c.index(this._hashes[a])||0;return a?void this._core.to(d,!1,!0):!1},this))};c.Defaults={URLhashListener:!1},c.prototype.destroy=function(){var c,d;a(b).off("hashchange.owl.navigation");for(c in this._handlers)this._core.$element.off(c,this._handlers[c]);for(d in Object.getOwnPropertyNames(this))"function"!=typeof this[d]&&(this[d]=null)},a.fn.owlCarousel.Constructor.Plugins.Hash=c}(window.Zepto||window.jQuery,window,document);  
+
+
+
+/*! Theia Sticky Sidebar | v1.7.0 - https://github.com/WeCodePixels/theia-sticky-sidebar */
+(function($){$.fn.theiaStickySidebar=function(options){var defaults={'containerSelector':'','additionalMarginTop':0,'additionalMarginBottom':0,'updateSidebarHeight':true,'minWidth':0,'disableOnResponsiveLayouts':true,'sidebarBehavior':'modern','defaultPosition':'relative','namespace':'TSS'};options=$.extend(defaults,options);options.additionalMarginTop=parseInt(options.additionalMarginTop)||0;options.additionalMarginBottom=parseInt(options.additionalMarginBottom)||0;tryInitOrHookIntoEvents(options,this);function tryInitOrHookIntoEvents(options,$that){var success=tryInit(options,$that);if(!success){console.log('TSS: Body width smaller than options.minWidth. Init is delayed.');$(document).on('scroll.'+options.namespace,function(options,$that){return function(evt){var success=tryInit(options,$that);if(success){$(this).unbind(evt)}}}(options,$that));$(window).on('resize.'+options.namespace,function(options,$that){return function(evt){var success=tryInit(options,$that);if(success){$(this).unbind(evt)}}}(options,$that))}}function tryInit(options,$that){if(options.initialized===true){return true}if($('body').width()<options.minWidth){return false}init(options,$that);return true}function init(options,$that){options.initialized=true;var existingStylesheet=$('#theia-sticky-sidebar-stylesheet-'+options.namespace);if(existingStylesheet.length===0){$('head').append($('<style id="theia-sticky-sidebar-stylesheet-'+options.namespace+'">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>'))}$that.each(function(){var o={};o.sidebar=$(this);o.options=options||{};o.container=$(o.options.containerSelector);if(o.container.length==0){o.container=o.sidebar.parent()}o.sidebar.parents().css('-webkit-transform','none');o.sidebar.css({'position':o.options.defaultPosition,'overflow':'visible','-webkit-box-sizing':'border-box','-moz-box-sizing':'border-box','box-sizing':'border-box'});o.stickySidebar=o.sidebar.find('.theiaStickySidebar');if(o.stickySidebar.length==0){var javaScriptMIMETypes=/(?:text|application)\/(?:x-)?(?:javascript|ecmascript)/i;o.sidebar.find('script').filter(function(index,script){return script.type.length===0||script.type.match(javaScriptMIMETypes)}).remove();o.stickySidebar=$('<div>').addClass('theiaStickySidebar').append(o.sidebar.children());o.sidebar.append(o.stickySidebar)}o.marginBottom=parseInt(o.sidebar.css('margin-bottom'));o.paddingTop=parseInt(o.sidebar.css('padding-top'));o.paddingBottom=parseInt(o.sidebar.css('padding-bottom'));var collapsedTopHeight=o.stickySidebar.offset().top;var collapsedBottomHeight=o.stickySidebar.outerHeight();o.stickySidebar.css('padding-top',1);o.stickySidebar.css('padding-bottom',1);collapsedTopHeight-=o.stickySidebar.offset().top;collapsedBottomHeight=o.stickySidebar.outerHeight()-collapsedBottomHeight-collapsedTopHeight;if(collapsedTopHeight==0){o.stickySidebar.css('padding-top',0);o.stickySidebarPaddingTop=0}else{o.stickySidebarPaddingTop=1}if(collapsedBottomHeight==0){o.stickySidebar.css('padding-bottom',0);o.stickySidebarPaddingBottom=0}else{o.stickySidebarPaddingBottom=1}o.previousScrollTop=null;o.fixedScrollTop=0;resetSidebar();o.onScroll=function(o){if(!o.stickySidebar.is(":visible")){return}if($('body').width()<o.options.minWidth){resetSidebar();return}if(o.options.disableOnResponsiveLayouts){var sidebarWidth=o.sidebar.outerWidth(o.sidebar.css('float')=='none');if(sidebarWidth+50>o.container.width()){resetSidebar();return}}var scrollTop=$(document).scrollTop();var position='static';if(scrollTop>=o.sidebar.offset().top+(o.paddingTop-o.options.additionalMarginTop)){var offsetTop=o.paddingTop+options.additionalMarginTop;var offsetBottom=o.paddingBottom+o.marginBottom+options.additionalMarginBottom;var containerTop=o.sidebar.offset().top;var containerBottom=o.sidebar.offset().top+getClearedHeight(o.container);var windowOffsetTop=0+options.additionalMarginTop;var windowOffsetBottom;var sidebarSmallerThanWindow=(o.stickySidebar.outerHeight()+offsetTop+offsetBottom)<$(window).height();if(sidebarSmallerThanWindow){windowOffsetBottom=windowOffsetTop+o.stickySidebar.outerHeight()}else{windowOffsetBottom=$(window).height()-o.marginBottom-o.paddingBottom-options.additionalMarginBottom}var staticLimitTop=containerTop-scrollTop+o.paddingTop;var staticLimitBottom=containerBottom-scrollTop-o.paddingBottom-o.marginBottom;var top=o.stickySidebar.offset().top-scrollTop;var scrollTopDiff=o.previousScrollTop-scrollTop;if(o.stickySidebar.css('position')=='fixed'){if(o.options.sidebarBehavior=='modern'){top+=scrollTopDiff}}if(o.options.sidebarBehavior=='stick-to-top'){top=options.additionalMarginTop}if(o.options.sidebarBehavior=='stick-to-bottom'){top=windowOffsetBottom-o.stickySidebar.outerHeight()}if(scrollTopDiff>0){top=Math.min(top,windowOffsetTop)}else{top=Math.max(top,windowOffsetBottom-o.stickySidebar.outerHeight())}top=Math.max(top,staticLimitTop);top=Math.min(top,staticLimitBottom-o.stickySidebar.outerHeight());var sidebarSameHeightAsContainer=o.container.height()==o.stickySidebar.outerHeight();if(!sidebarSameHeightAsContainer&&top==windowOffsetTop){position='fixed'}else if(!sidebarSameHeightAsContainer&&top==windowOffsetBottom-o.stickySidebar.outerHeight()){position='fixed'}else if(scrollTop+top-o.sidebar.offset().top-o.paddingTop<=options.additionalMarginTop){position='static'}else{position='absolute'}}if(position=='fixed'){var scrollLeft=$(document).scrollLeft();o.stickySidebar.css({'position':'fixed','width':getWidthForObject(o.stickySidebar)+'px','transform':'translateY('+top+'px)','left':(o.sidebar.offset().left+parseInt(o.sidebar.css('padding-left'))-scrollLeft)+'px','top':'0px'})}else if(position=='absolute'){var css={};if(o.stickySidebar.css('position')!='absolute'){css.position='absolute';css.transform='translateY('+(scrollTop+top-o.sidebar.offset().top-o.stickySidebarPaddingTop-o.stickySidebarPaddingBottom)+'px)';css.top='0px'}css.width=getWidthForObject(o.stickySidebar)+'px';css.left='';o.stickySidebar.css(css)}else if(position=='static'){resetSidebar()}if(position!='static'){if(o.options.updateSidebarHeight==true){o.sidebar.css({'min-height':o.stickySidebar.outerHeight()+o.stickySidebar.offset().top-o.sidebar.offset().top+o.paddingBottom})}}o.previousScrollTop=scrollTop};o.onScroll(o);$(document).on('scroll.'+o.options.namespace,function(o){return function(){o.onScroll(o)}}(o));$(window).on('resize.'+o.options.namespace,function(o){return function(){o.stickySidebar.css({'position':'static'});o.onScroll(o)}}(o));if(typeof ResizeSensor!=='undefined'){new ResizeSensor(o.stickySidebar[0],function(o){return function(){o.onScroll(o)}}(o))}function resetSidebar(){o.fixedScrollTop=0;o.sidebar.css({'min-height':'1px'});o.stickySidebar.css({'position':'static','width':'','transform':'none'})}function getClearedHeight(e){var height=e.height();e.children().each(function(){height=Math.max(height,$(this).height())});return height}})}function getWidthForObject(object){var width;try{width=object[0].getBoundingClientRect().width}catch(err){}if(typeof width==="undefined"){width=object.width()}return width}return this}})(jQuery);
+//]]>
+</script>
+<!-- Theme Functions JS -->
+<script type='text/javascript'>
+//<![CDATA[
+$(function(a) {
+	a.fn.lazyyard = function() {
+		return this.each(function() {
+			var t = a(this),
+				dImg = t.attr('src'),
+				iWid = Math.round(t.width()),
+				iHei = Math.round(t.height()),
+				iSiz = 'w' + iWid + '-h' + iHei + '-p-k-no-nu',
+				img = '';
+			if(dImg.match('/s72-c')) {
+				img = dImg.replace('/s72-c', '/' + iSiz);
+			} else if(dImg.match('/w72-h')) {
+				img = dImg.replace('/w72-h72-p-k-no-nu', '/' + iSiz);
+			} else if(dImg.match('=w72-h')) {
+				img = dImg.replace('=w72-h72-p-k-no-nu', '=' + iSiz);
+			} else {
+				img = dImg;
+			}
+			a(window).on('load resize scroll', smoothload);
+
+			function smoothload() {
+				var wHeight = a(window).height(),
+					scrTop = a(window).scrollTop(),
+					offTop = t.offset().top;
+				if(scrTop + wHeight > offTop) {
+					var n = new Image();
+					n.onload = function() {
+						t.attr('src', '' + this.src + '').addClass('lazy-yard');
+					}, n.src = img;
+				}
+			}
+			smoothload();
+		});
+	}
+});
+$(function() {
+$('.index-post .post-image-link .post-thumb, .PopularPosts .post-image-link .post-thumb, .FeaturedPost .post-image-link .post-thumb').lazyyard();
+    $('#main-menu').each(function() {
+        var iTms = $(this).find('.LinkList ul > li').children('a'),
+            iLen = iTms.length;
+        for (var i = 0; i < iLen; i++) {
+            var i1 = iTms.eq(i),
+                t1 = i1.text();
+            if (t1.charAt(0) !== '_') {
+                var i2 = iTms.eq(i + 1),
+                    t2 = i2.text();
+                if (t2.charAt(0) === '_') {
+                    var l1 = i1.parent();
+                    l1.append('<ul class="sub-menu m-sub"/>');
+                }
+            }
+            if (t1.charAt(0) === '_') {
+                i1.text(t1.replace('_', ''));
+                i1.parent().appendTo(l1.children('.sub-menu'));
+            }
+        }
+        for (var i = 0; i < iLen; i++) {
+            var i3 = iTms.eq(i),
+                t3 = i3.text();
+            if (t3.charAt(0) !== '_') {
+                var i4 = iTms.eq(i + 1),
+                    t4 = i4.text();
+                if (t4.charAt(0) === '_') {
+                    var l2 = i3.parent();
+                    l2.append('<ul class="sub-menu2 m-sub"/>');
+                }
+            }
+            if (t3.charAt(0) === '_') {
+                i3.text(t3.replace('_', ''));
+                i3.parent().appendTo(l2.children('.sub-menu2'));
+            }
+        }
+        $('#main-menu ul li ul').parent('li').addClass('has-sub');
+        $('#main-menu .widget').addClass('show-menu');
+    });
+    $('#main-menu-nav').clone().appendTo('.mobile-menu');
+    $('.mobile-menu .has-sub').append('<div class="submenu-toggle"/>');
+    $('.mobile-menu ul > li a').each(function() {
+        var $this = $(this),
+            text = $this.attr('href').trim(),
+            type = text.toLowerCase(),
+            map = text.split('/'),
+            label = map[0];
+        if (type.match('mega-menu')) {
+            $this.attr('href', '/search/label/' + label + '?&max-results=' + postPerPage);
+        }
+    });
+    $('.slide-menu-toggle').on('click', function() {
+        $('body').toggleClass('nav-active');
+    });
+    $('.mobile-menu ul li .submenu-toggle').on('click', function($this) {
+        if ($(this).parent().hasClass('has-sub')) {
+            $this.preventDefault();
+            if (!$(this).parent().hasClass('show')) {
+                $(this).parent().addClass('show').children('.m-sub').slideToggle(170);
+            } else {
+                $(this).parent().removeClass('show').find('> .m-sub').slideToggle(170);
+            }
+        }
+    });
+    $('.show-search').on('click', function() {
+        $('#nav-search').fadeIn(250).find('input').focus();
+    });
+    $('.hide-search').on('click', function() {
+        $('#nav-search').fadeOut(250).find('input').blur();
+    });
+    $('.Label a, a.b-label').attr('href', function($this, href) {
+        return href.replace(href, href + '?&max-results=' + postPerPage);
+    });
+    $('.avatar-image-container img').attr('src', function($this, i) {
+        i = i.replace('/s35-c/', '/s45-c/');
+        i = i.replace('//img1.blogblog.com/img/blank.gif', '//4.bp.blogspot.com/-uCjYgVFIh70/VuOLn-mL7PI/AAAAAAAADUs/Kcu9wJbv790hIo83rI_s7lLW3zkLY01EA/s55-r/avatar.png');
+        return i;
+    });
+    $('.author-description a').each(function() {
+        $(this).attr('target', '_blank');
+    });
+    $('.post-nav').each(function() {
+        var getURL_prev = $('a.prev-post-link').attr('href'),
+            getURL_next = $('a.next-post-link').attr('href');
+        $.ajax({
+            url: getURL_prev,
+            type: 'get',
+            success: function(prev) {
+                var title = $(prev).find('.blog-post h1.post-title').text();
+                $('.post-prev a .post-nav-inner p').text(title);
+            }
+        });
+        $.ajax({
+            url: getURL_next,
+            type: 'get',
+            success: function(next) {
+                var title = $(next).find('.blog-post h1.post-title').text();
+                $('.post-next a .post-nav-inner p').text(title);
+            }
+        });
+    });
+    $('.post-body strike').each(function() {
+        var $this = $(this),
+            type = $this.text();
+        if (type.match('left-sidebar')) {
+            $this.replaceWith('<style>.item #main-wrapper{float:right}.item #sidebar-wrapper{float:left}</style>');
+        }
+        if (type.match('right-sidebar')) {
+            $this.replaceWith('<style>.item #main-wrapper{float:left}.item #sidebar-wrapper{float:right}</style>');
+        }
+        if (type.match('full-width')) {
+            $this.replaceWith('<style>.item #main-wrapper{width:100%}.item #sidebar-wrapper{display:none}</style>');
+        }
+    });
+    $('#main-wrapper, #sidebar-wrapper').each(function() {
+        if (fixedSidebar == true) {
+            $(this).theiaStickySidebar({
+                additionalMarginTop: 30,
+                additionalMarginBottom: 30
+            });
+        }
+    });
+    $('.back-top').each(function() {
+        var $this = $(this);
+        $(window).on('scroll', function() {
+            $(this).scrollTop() >= 100 ? $this.fadeIn(250) : $this.fadeOut(250)
+        }), $this.click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500)
+        });
+    });
+    $('#main-menu #main-menu-nav li').each(function() {
+        var li = $(this),
+            text = li.find('a').attr('href').trim(),
+            $this = li,
+            type = text.toLowerCase(),
+            map = text.split('/'),
+            label = map[0];
+        ajaxPosts($this, type, 4, label);
+    });
+$('#break-section .widget-content').each(function() {
+        var $this = $(this),
+            text = $this.text().trim(),
+            type = text.toLowerCase(),
+            map = text.split('/'),
+            num = map[0],
+            label = map[1];
+        ajaxPosts($this, type, num, label);
+    });
+    $('.common-widget .widget-content').each(function() {
+        var $this = $(this),
+            text = $this.text().trim(),
+            type = text.toLowerCase(),
+            map = text.split('/'),
+            num = map[0],
+            label = map[1];
+        ajaxPosts($this, type, num, label);
+    });
+    $('.related-ready').each(function() {
+        var $this = $(this),
+            label = $this.find('.related-tag').data('label');
+        ajaxPosts($this, 'related', 3, label);
+    });
+
+    function post_link(feed, i) {
+        for (var x = 0; x < feed[i].link.length; x++)
+            if (feed[i].link[x].rel == 'alternate') {
+                var link = feed[i].link[x].href;
+                break
+            }
+        return link;
+    }
+
+    function post_title(feed, i, link) {
+        var n = feed[i].title.$t,
+            code = '<a href="' + link + '">' + n + '</a>';
+        return code;
+    }
+
+    function post_author(feed, i) {
+        var n = feed[i].author[0].name.$t,
+            code = '<span class="post-author"><a>' + n + '</a></span>';
+        return code;
+    }
+
+    function post_date(feed, i) {
+        var c = feed[i].published.$t,
+            d = c.substring(0, 4),
+            f = c.substring(5, 7),
+            m = c.substring(8, 10),
+            h = monthFormat[parseInt(f, 10) - 1] + ' ' + m + ', ' + d,
+            code = '<span class="post-date">' + h + '</span>';
+        return code;
+    }
+
+   function postThumb($c, img) {
+	var $h = $('<div>').html($c),
+		$t = $h.find('img:first').attr('src'),
+		$a = $t.lastIndexOf('/') || 0,
+		$b = $t.lastIndexOf('/', $a - 1) || 0,
+		$p0 = $t.substring(0, $b),
+		$p1 = $t.substring($b, $a),
+		$p2 = $t.substring($a);
+	if($p1.match(/\/s[0-9]+/g) || $p1.match(/\/w[0-9]+/g) || $p1 == '/d') {
+		$p1 = '/w72-h72-p-k-no-nu'
+	}
+	img = $p0 + $p1 + $p2;
+	return img
+}
+
+function FeatImage(feed, i, img) {
+	var $c = feed[i].content.$t;
+	if(feed[i].media$thumbnail) {
+		var src = feed[i].media$thumbnail.url
+	} else {
+		src = noThumbnail;
+	}
+	if($c.indexOf($c.match(/<iframe(?:.+)?src=(?:.+)?(?:www.youtube.com)/g)) > -1) {
+		if($c.indexOf('<img') > -1) {
+			if($c.indexOf($c.match(/<iframe(?:.+)?src=(?:.+)?(?:www.youtube.com)/g)) < $c.indexOf('<img')) {
+				img = src.replace('/default.', '/0.')
+			} else {
+				img = postThumb($c)
+			}
+		} else {
+			img = src.replace('/default.', '/0.')
+		}
+	} else if($c.indexOf('<img') > -1) {
+		img = postThumb($c)
+	} else {
+		img = noThumbnail;
+	}
+     var code = '<img class="post-thumb" alt="" src="' + img + '"/>';
+        return code;
+}
+
+    function post_label(feed, i) {
+        if (feed[i].category != undefined) {
+            var tag = feed[i].category[0].term,
+                code = '<span class="post-tag">' + tag + '</span>';
+        } else {
+            code = '';
+        }
+        return code;
+    }
+
+    function ajaxPosts($this, type, num, label) {
+        if (type.match('mega-menu') || type.match('ticker-posts')|| type.match('featured') || type.match('post-list') || type.match('related')) {
+            var url = '';
+            if (label == 'recent') {
+                url = '/feeds/posts/default?alt=json-in-script&max-results=' + num;
+            } else if (label == 'random') {
+                var index = Math.floor(Math.random() * num) + 1;
+                url = '/feeds/posts/default?max-results=' + num + '&start-index=' + index + '&alt=json-in-script';
+            } else {
+                url = '/feeds/posts/default/-/' + label + '?alt=json-in-script&max-results=' + num;
+            }
+            $.ajax({
+                url: url,
+                type: 'get',
+                dataType: 'jsonp',
+                beforeSend: function() {
+                    if (type.match('ticker-posts')) {
+                        $this.html('<ul class="loading-post">Loading......</ul>').parent().addClass('show-ticker');
+                    }
+                },
+                success: function(json) {
+                    if (type.match('mega-menu')) {
+                        var kode = '<ul class="mega-menu-inner">';
+                    } else if (type.match('ticker-posts')) {
+                        var kode = '<ul class="ticker-widget">';
+                    } else if (type.match('post-list')) {
+                        var kode = '<ul class="custom-widget">';
+                    } else if (type.match('related')) {
+                        var kode = '<ul class="related-posts">';
+                    }
+                    var entry = json.feed.entry;
+                    if (entry != undefined) {
+                        for (var i = 0, feed = entry; i < feed.length; i++) {
+                            var link = post_link(feed, i),
+                                title = post_title(feed, i, link),
+                                image = FeatImage(feed, i, link),
+                                tag = post_label(feed, i),
+                                author = post_author(feed, i),
+                                date = post_date(feed, i);
+                            var kontent = '';
+                            if (type.match('mega-menu')) {
+                                kontent += '<div class="mega-item item-' + i + '"><div class="mega-content"><div class="post-image-wrap"><a class="post-image-link" href="' + link + '">' + image + '</a>' + tag + '</div><h2 class="post-title">' + title + '</h2><div class="post-meta">' + date + '</div></div></div>';
+                            } else if (type.match('ticker-posts')) {
+                                kontent += '<li class="ticker-item item-' + i + '"><a class="post-image-link" href="' + link + '">' + image + '</a>' + tag + '<h2 class="post-title">' + title + '</h2></li>';
+                            } else if (type.match('post-list')) {
+                                kontent += '<li class="item-' + i + '"><a class="post-image-link" href="' + link + '">' + image + '</a><div class="post-info"><h2 class="post-title">' + title + '</h2><div class="post-meta">' + date + '</div></div></div></li>';
+                            } else if (type.match('related')) {
+                                kontent += '<li class="related-item item-' + i + '"><div class="post-image-wrap"><a class="post-image-link" href="' + link + '">' + image + '</a>' + tag + '</div><h2 class="post-title">' + title + '</h2><div class="post-meta">' + date + '</div></li>';
+                            }
+                            kode += kontent;
+                        }
+                        kode += '</ul>';
+                    } else {
+                        kode = '<ul class="no-posts">Error: No Posts Found <i class="fa fa-frown"/></ul>';
+                    }
+                    if (type.match("mega-menu")) {
+                        $this.addClass('has-sub mega-menu').append(kode);
+                        $this.find('a:first').attr('href', function($this, href) {
+                            if (label == 'recent' || label == 'random') {
+                                href = href.replace(href, '/search/?&max-results=' + postPerPage);
+                            } else {
+                                href = href.replace(href, '/search/label/' + label + '?&max-results=' + postPerPage);
+                            }
+                            return href;
+                        });
+                    } else if (type.match('ticker-posts')) {
+                        $this.html(kode).parent().addClass('show-ticker');
+                        var $newsticker = $this.find('.ticker-widget');
+                                $newsticker.owlCarousel({
+                                    items: 1,
+                                    animateIn: 'fadeInUp',
+                                    animateOut: 'fadeOutUp',
+                                    smartSpeed: 0,
+                                    rtl: false,
+                                    nav: true,
+                                    navText: ['', ''],
+                                    loop: true,
+                                    autoplay: true,
+                                    autoplayHoverPause: true,
+                                    dots: false,
+                                    mouseDrag: false,
+                                    touchDrag: false,
+                                    freeDrag: false,
+                                    pullDrag: false
+                                }); 
+                    } else {
+                        $this.html(kode);
+                    }      
+$this.find('.post-thumb').lazyyard();
+                }
+            });
+        }
+    }
+    $('.blog-post-comments').each(function() {
+        var system = commentsSystem,
+            disqus_url = disqus_blogger_current_url,
+            disqus = '<div id="disqus_thread"/>',
+            current_url = $(location).attr('href'),
+            facebook = '<div class="fb-comments" data-width="100%" data-href="' + current_url + '" data-numposts="5"></div>',
+            sClass = 'comments-system-' + system;
+        if (system == 'blogger') {
+            $(this).addClass(sClass).show();
+        } else if (system == 'disqus') {
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqusShortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            $('#comments, #gpluscomments').remove();
+            $(this).append(disqus).addClass(sClass).show();
+        } else if (system == 'facebook') {
+            $('#comments, #gpluscomments').remove();
+            $(this).append(facebook).addClass(sClass).show();
+        } else if (system == 'hide') {
+            $(this).hide();
+        } else {
+            $(this).addClass('comments-system-default').show();
+        }
+    });
+});
+//]]>
+</script>
+<!-- Pagination Scripts -->
+<!-- Facebook SDK -->
+<script type='text/javascript'>
+//<![CDATA[
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+//]]>
+</script>
+<!-- Overlay and Back To Top -->
+<div class='back-top' title='Back to Top'></div>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/523887051-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY443qYMLRmsK7HatfMpRkNHg7XZWg:1716156817718';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d708822688834956217','//www.coodemaroc.com/2022/10/sql.html','708822688834956217');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '708822688834956217', 'title': ' Coode Maroc ', 'url': 'https://www.coodemaroc.com/2022/10/sql.html', 'canonicalUrl': 'https://www.coodemaroc.com/2022/10/sql.html', 'homepageUrl': 'https://www.coodemaroc.com/', 'searchUrl': 'https://www.coodemaroc.com/search', 'canonicalHomepageUrl': 'https://www.coodemaroc.com/', 'blogspotFaviconUrl': 'https://www.coodemaroc.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-160269368-1', 'encoding': 'UTF-8', 'locale': 'fr', 'localeUnderscoreDelimited': 'fr', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22 Coode Maroc  - Atom\x22 href\x3d\x22https://www.coodemaroc.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22 Coode Maroc  - RSS\x22 href\x3d\x22https://www.coodemaroc.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22 Coode Maroc  - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/708822688834956217/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22 Coode Maroc  - Atom\x22 href\x3d\x22https://www.coodemaroc.com/feeds/7801641658240523640/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-4042780438239805', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': true, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/5189a333a5515c96', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Obtenir le lien', 'key': 'link', 'shareMessage': 'Obtenir le lien', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Partager sur Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Partager sur Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Partager sur Pinterest', 'target': 'pinterest'}, {'name': 'E-mail', 'key': 'email', 'shareMessage': 'E-mail', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27fr\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': true, 'jumpLinkMessage': 'Read more \xbb', 'pageType': 'item', 'postId': '7801641658240523640', 'postImageThumbnailUrl': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s72-c/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg', 'postImageUrl': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s320/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg', 'pageName': ' Exercices corrig\xe9s en Langage  SQL', 'pageTitle': ' Coode Maroc :  Exercices corrig\xe9s en Langage  SQL', 'metaDescription': ''}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Modifier', 'linkCopiedToClipboard': 'Lien copi\xe9 dans le presse-papiers\xa0!', 'ok': 'OK', 'postLink': 'Publier le lien'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Personnaliser', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': ' Exercices corrig\xe9s en Langage  SQL', 'description': '', 'featuredImage': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s320/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg', 'url': 'https://www.coodemaroc.com/2022/10/sql.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 7801641658240523640}}, {'name': 'widgets', 'data': [{'title': 'Boxed Version', 'type': 'LinkList', 'sectionId': 'sora-panel', 'id': 'LinkList70'}, {'title': 'Default Variables', 'type': 'LinkList', 'sectionId': 'sora-panel', 'id': 'LinkList71'}, {'title': 'Ticker', 'type': 'HTML', 'sectionId': 'break-section', 'id': 'HTML200'}, {'title': '', 'type': 'LinkList', 'sectionId': 'top-bar-nav', 'id': 'LinkList72'}, {'title': ' Coode Maroc  (en-t\xeate)', 'type': 'Header', 'sectionId': 'header-logo', 'id': 'Header1'}, {'title': '', 'type': 'LinkList', 'sectionId': 'top-bar-social', 'id': 'LinkList73'}, {'title': 'Link List', 'type': 'LinkList', 'sectionId': 'main-menu', 'id': 'LinkList74'}, {'title': 'Advertisement', 'type': 'HTML', 'sectionId': 'home-ad', 'id': 'HTML33'}, {'title': 'Articles du blog', 'type': 'Blog', 'sectionId': 'main', 'id': 'Blog1', 'posts': [{'id': '7801641658240523640', 'title': ' Exercices corrig\xe9s en Langage  SQL', 'featuredImage': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrAr2CJZQaWSe2LW9fqh_wLvuMHw9n_RDySMyxZBWrGng0f9rbGkLfoA16i0oQBLgVxEmBAEEF_1__xpOt392My3RgYSaTtaJzRlapgDsTxAH-zRF8ZTVTLg2e-VFVmjmltgEsWfjsYgd39XIqbTiT6U6coBBoO3Gfv3FHY5Ua_dxAkWiGdAeEKi2m/s320/sql-tutorial-learn-sql-with-mysql-database-beginner2expert.jpg', 'showInlineAds': false}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'author', 'label': 'by'}, {'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'Comments'}, {'name': 'labels', 'label': 'Tags'}, {'name': 'backlinks', 'label': 'Related Posts'}]}], 'allBylineItems': [{'name': 'author', 'label': 'by'}, {'name': 'timestamp', 'label': ''}, {'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'Comments'}, {'name': 'labels', 'label': 'Tags'}, {'name': 'backlinks', 'label': 'Related Posts'}]}, {'title': '', 'type': 'HTML', 'sectionId': 'sidebar1', 'id': 'HTML1'}, {'title': 'Social Plugin', 'type': 'LinkList', 'sectionId': 'social-widget', 'id': 'LinkList75'}, {'title': 'Categories', 'type': 'Label', 'sectionId': 'sidebar2', 'id': 'Label3'}, {'title': 'Menu Footer Widget', 'type': 'LinkList', 'sectionId': 'menu-footer', 'id': 'LinkList76'}]}]);
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList70', 'sora-panel', document.getElementById('LinkList70'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList71', 'sora-panel', document.getElementById('LinkList71'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML200', 'break-section', document.getElementById('HTML200'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList72', 'top-bar-nav', document.getElementById('LinkList72'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header-logo', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList73', 'top-bar-social', document.getElementById('LinkList73'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList74', 'main-menu', document.getElementById('LinkList74'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML33', 'home-ad', document.getElementById('HTML33'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2137853815-lbx__fr.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/13464135-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar1', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList75', 'social-widget', document.getElementById('LinkList75'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label3', 'sidebar2', document.getElementById('Label3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList76', 'menu-footer', document.getElementById('LinkList76'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

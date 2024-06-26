@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="imag/online-learning.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Courses</title>
+   <!--swiper css link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="script.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- header section starts -->
+<header class="header">
+  <a href="#" class="logo"> <i class="fas fa-school"></i> Edweb </a>
+
+  <nav class="navbar">
+   <!--<div id="close-navbar" class="fas fa-times"></div>-->
+    <a href="indexs.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="icons">
+    <div id="account-btn" class="fas fa-user"></div>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </div>
+</header>
+ <!-- account form section starts-->
+ <div class="account-form">
+  <div id="close-form" class="fas fa-times" onclick="closeLoginForm()"></div>
+  <div class="buttons">
+      <span class="btn active login-btn">login</span>
+      <span class="btn register-btn">register</span>
+  </div>
+
+  <form class="login-form active" action="" onsubmit="return login(event)">
+      <h3>login now</h3>
+      <input type="email" id="login-email" placeholder="enter your email" class="box" required>
+      <div class="password-container">
+          <input type="password" id="login-password" placeholder="enter your password" class="box" required>
+          <i class="fas fa-eye" id="toggle-password"></i>
+      </div>
+      <div class="flex">
+          <input type="checkbox" name="" id="remember-me">
+          <label for="remember-me">remember-me</label>
+          <a href="index.html">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+      <div class="social-login">
+          <button onclick="loginWithGoogle()" class="google-btn">
+              <i class="fab fa-google"></i> Continuer avec Google
+          </button>
+          <button onclick="loginWithFacebook()" class="facebook-btn">
+              <i class="fab fa-facebook-f"></i> Continuer avec Facebook
+          </button>
+         
+      </div>
+  </form>
+
+  <form class="register-form" action="" onsubmit="return register(event)">
+    <h3>register now</h3>
+    <input type="email" id="register-email" placeholder="enter your email" class="box" required>
+    <div class="password-container">
+      <input type="password" id="register-password" placeholder="enter your password" class="box" required>
+      <i id="toggle-register-password" class="fa fa-eye"></i>
+    </div>
+    <div class="password-container">
+      <input type="password" id="register-confirm-password" placeholder="confirm your password" class="box" required>
+      <i id="toggle-register-confirm-password" class="fa fa-eye"></i>
+    </div>
+    <input type="submit" value="register now" class="btn">
+    <div class="social-register">
+      <button onclick="registerWithGoogle()" class="google-btn">
+        <i class="fab fa-google"></i> Continuer avec Google
+      </button>
+      <button onclick="registerWithFacebook()" class="facebook-btn">
+        <i class="fab fa-facebook-f"></i> Continuer avec Facebook
+      </button>
+     
+    </div>
+  </form>
+</div>
+<!-- account form section ends-->
+
+<!-- header section ends -->
+
+<section class="heading-link">
+  <h3>our courses</h3>
+  <p> <a href="indexs.html">home</a>/ courses </p>
+</section>
+
+<section class="courses">
+  <h1 class="heading"> our famous courses </h1>
+  <div class="box-container">
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses1.webp" alt="">
+        <h3>development</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Dans ce chapitre, nous vous aiderons à faire des choix éclairés pour votre développement personnel et professionnel, en alignant vos décisions avec vos aspirations et valeurs. Vous découvrirez des stratégies pratiques pour maximiser votre potentiel et atteindre vos objectifs.</p>
+        <a href="cour/principale.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 7 modules </span>
+          <span> <i class="fas fa-clock"></i> 100 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses_2.jpg" alt="">
+        <h3>engineering</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Dans ce chapitre, nous vous guiderons pour faire des choix éclairés dans votre carrière en ingénierie. Vous apprendrez à évaluer vos forces et intérêts, à définir des objectifs clairs, à explorer différentes voies de développement, et à mettre en place des stratégies efficaces pour atteindre vos aspirations professionnelles.</p>
+        <a href="cour/engineering.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 6 modules </span>
+          <span> <i class="fas fa-clock"></i> 30 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses_3.jpg" alt="">
+        <h3>mathemetics</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Explorez les divers domaines des mathématiques, évaluez vos compétences et définissez des objectifs clairs pour façonner votre parcours. Que vous aimiez l'algèbre, la géométrie ou les statistiques, ce chapitre vous aide à prendre des décisions éclairées pour réussir dans ce domaine passionnant.</p>
+        <a href="cour/mathematics.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 6 modules </span>
+          <span> <i class="fas fa-clock"></i> 20 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses_4.jpg" alt="">
+        <h3>doctor</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Ce chapitre vous accompagne dans la définition de votre carrière médicale. Évaluez vos compétences, définissez des objectifs concrets et explorez les spécialités pour trouver votre voie idéale. Vous découvrirez également des conseils pratiques pour naviguer dans le monde complexe de la médecine, vous permettant de prendre des décisions éclairées pour votre avenir professionnel.</p>
+        <a href="cour/doctor.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 5 modules </span>
+          <span> <i class="fas fa-clock"></i> 66 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses_5.jpg" alt="">
+        <h3>science</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Dans ce chapitre, nous explorons le domaine de la science, en offrant des conseils sur la façon de naviguer dans ses divers domaines. Evaluez vos compétences et définissez des objectifs clairs pour adapter votre parcours scientifique. Que vous soyez attiré par la biologie, la physique, la chimie ou au-delà, ce chapitre vous permet de prendre des décisions éclairées qui correspondent à vos passions.</p>
+        <a href="cour/science.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 4 modules </span>
+          <span> <i class="fas fa-clock"></i> 40 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="imag/courses_6.jpg" alt="">
+        <h3>business</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Dans ce chapitre, plongez dans le monde des affaires et découvrez comment façonner votre parcours professionnel. Explorez différents domaines tels que la gestion, le marketing, la finance et entrepreneuriat. Évaluez vos compétences, définissez des objectifs clairs et explorez les opportunités qui correspondent à vos ambitions. Décisions, succès, carrière, affaires.</p>
+        <a href="cour/business.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 6 modules </span>
+          <span> <i class="fas fa-clock"></i> 62 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box hide">
+      <div class="image">
+        <img src="imag/courses_7.jpg" alt="">
+        <h3>teaching</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Explorez l'enseignement, évaluez vos compétences et fixez des objectifs clairs pour façonner votre carrière. Que ce soit dans les écoles, les collèges, les universités ou que vous souhaitiez explorer d'autres voies éducatives , trouvez la voie qui vous convient le mieux à vos aspirations. Ce chapitre vous guide vers le succès dans le domaine de l'enseignement.</p>
+        <a href="cour/teaching.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 6 modules </span>
+          <span> <i class="fas fa-clock"></i> 40 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box hide">
+      <div class="image">
+        <img src="imag/courses_8.jpg" alt="">
+        <h3>designing</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>  Explorez le monde dynamique du design dans ce chapitre. Que vous soyez attiré par le design graphique, le design industriel ou le design UX/UI, explorez vos intérêts, évaluez vos compétences et définissez des objectifs clairs pour façonner votre carrière. Ce chapitre vous donne les moyens de prendre des décisions éclairées et de réussir dans le domaine du design.</p>
+        <a href="cour/design.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 2 modules </span>
+          <span> <i class="fas fa-clock"></i> 30 hours </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="box hide">
+      <div class="image">
+        <img src="imag/courses_9.jpg" alt="">
+        <h3>dancing</h3>
+      </div>
+      <div class="content">
+        <h3>choose what's best for you!</h3>
+        <p>Plongez dans la danse et explorez divers styles comme la salsa, le hip-hop ou la danse classique. Que ce soit pour le plaisir, l'exercice ou la performance, évaluez votre niveau et fixez des objectifs clairs. Découvrez les opportunités qui correspondent à votre passion. Ce chapitre vous guide pour faire des choix éclairés et réussir dans le monde captivant de la danse.</p>
+        <a href="cour/dancing.html" class="btn">read more</a>
+        <div class="icons">
+          <span> <i class="fas fa-book"></i> 3 modules </span>
+          <span> <i class="fas fa-clock"></i> 20 hours </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="load-more"> <div class="btn">load more</div> </div>
+</section>
+
+
+<!--footer section starts-->
+<section class="footer">
+  <div class = "box-container">
+
+    <div class="box">
+      <h3> <i class="fas fa-lightbulb"></i> Edweb </h3>
+      <p>"Edweb : Votre destination pour l'apprentissage en ligne. Explorez des ressources éducatives et assistez à des webinaires interactifs dès aujourd'hui."  </p>
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="indexs.html" class="link">Home</a>
+      <a href="about.html" class="link">About</a>
+      <a href="contact.html" class="link">Contact</a>
+      <a href="courses.html" class="link">Courses</a>
+     </div>
+
+     <div class="box">
+      <h3>useful links</h3>
+      <a href="#" class="link">help center</a>
+      <a href="#" class="link">ask questions</a>
+      <a href="#" class="link">send feedback</a>
+      <a href="#" class="link">private policy</a>
+      <a href="#" class="link">terms of use</a>
+     </div>
+     <div class="box">
+      <h3>newsletter</h3>
+      <p>susbscribe for latest upadetes</p>
+      <form action="">
+        <input type="email" name=""placeholder="enter your email" id="email" class="email-field">
+        <input type="submit" value="susbscribe" class="btn">
+      </form>
+     </div>
+  </div>
+  <div class="credit">crated by<span> Mr.boubker</span></div>
+</section>
+<!--footer section ends-->
+
+
+
+<!--swiper js link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- custom js file link -->
+
+</body>
+<html>

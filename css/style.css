@@ -1,0 +1,32 @@
+html, body{
+    font-weight: 400 !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.primary-color{
+    color: #0eb582;
+}
+
+.btn-sz-primary{
+    width: 100%;
+    color: white !important;
+    background-color: #0eb582;
+}
+
+.btn-sz-primary:hover{
+    background-color: #0eb582;
+}
+
+.main-text{
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+.main-input{
+    width: 80%;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid #0eb582 !important;
+}
